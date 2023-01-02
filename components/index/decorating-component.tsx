@@ -4,16 +4,16 @@ import React from "react";
 
 export default function DecoratingComponent() {
   return (
-    <div className="lg:relative  bg-blue-400 display flex justify-center h-[500px] w-[500px]">
-      <div className=" h-[200px] lg:absolute w-[200px] bg-gray-700 bg-center bg-cover z-0 top-[65%] left-[65%]" />
+    <div className="relative  bg-blue-400 display h-[400px] w-[400px] lg:h-[500px] lg:w-[500px]">
+      <div className="absolute lg:h-[200px] lg:w-[200px] h-[170px] w-[170px] bg-slate-600 bg-center bg-cover z-0 top-[65%] left-[65%]" />
       <div
-        className="h-[500px] w-[500px] bg-cover bg-center lg:absolute bg-black top-0 left-0 z-10"
+        className="bg-cover bg-center absolute bg-black top-0 left-0 z-10 h-full w-full"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1543165796-5426273eaab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80')",
         }}
       ></div>
-      <div className=" h-[200px] lg:absolute w-[200px] bottom-[65%] right-[65%] bg-gray-700 bg-center bg-cover z-0" />
+      <div className=" absolute lg:h-[200px] lg:w-[200px] h-[170px] w-[170px] bottom-[65%] right-[65%] bg-slate-400 bg-center bg-cover z-0" />
     </div>
   );
 }

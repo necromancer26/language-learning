@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`navbar fixed z-50  ${
+      className={`navbar fixed z-50 ease-in  ${
         navbar ? "bg-slate-50/[0.9]" : "bg-transparent text-white"
       }`}
     >

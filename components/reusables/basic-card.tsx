@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BasicCard() {
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl rounded-none">
+    <div className="card card-compact w-96 bg-base-100 shadow-xl rounded-none lg:my-0 my-5">
       <figure>
         <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
       </figure>
