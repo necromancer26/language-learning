@@ -9,7 +9,7 @@ export default function Hero() {
           "url('https://polydioms.com/wp-content/uploads/2022/12/pexels-nothing-ahead-4440720-scaled.jpg')",
       }}
     >
-      <div className="hero min-h-screen  flex">
+      <div className="hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex">
         {/* bg-gradient-to-r from-[#03045e] */}
         <div className="lg:w-1/2 h-[100vh] flex justify-center items-start flex-col p-20">
           <h1 className="mb-5 text-5xl font-bold text-white font-[playfairdisplay]">

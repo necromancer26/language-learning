@@ -16,7 +16,7 @@ export default function OtherServicesSection() {
           <GlassyCard />
           <GlassyCard />
         </div> */}
-        <div className="flex justify-center items-center w-1/2 ">
+        <div className="flex justify-center items-center w-1/2">
           <DecoratingComponent />
         </div>
         <div className="flex justify-center items-center flex-col w-1/2">
