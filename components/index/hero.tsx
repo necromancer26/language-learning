@@ -10,7 +10,7 @@ export default function Hero() {
       }}
     >
       <div className="hero min-h-screen bg-gradient-to-r from-[#03045e] flex">
-        <div className="w-1/2 h-[100vh] flex justify-center items-start flex-col p-20">
+        <div className="lg:w-1/2 h-[100vh] flex justify-center items-start flex-col p-20">
           <h1 className="mb-5 text-5xl font-bold text-white font-[playfairdisplay]">
             LANGUAGE BARRIER <br />
             <span className="font-[spectral]">
