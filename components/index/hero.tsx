@@ -17,6 +17,12 @@ export default function Hero() {
               SHALL NOT <br /> HINDER <br /> YOUR SUCCESS
             </span>
           </h1>
+          <span className=" text-gray-300 mb-5">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum
+            delectus, velit eligendi similique eius cum temporibus voluptatum
+            officia minima eos aperiam amet iste atque mollitia animi ipsa quam
+            earum?
+          </span>
           <a className="btn">Explore our services</a>
           {/*         
         <div className=" bg-blue-200 h-[200px] w-[200px] rounded-full bg-[url('../assets/american-country.jpg')] bg-center bg-cover m-5"></div>
