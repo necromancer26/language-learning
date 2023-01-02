@@ -4,7 +4,7 @@ import React from "react";
 
 export default function DecoratingComponent() {
   return (
-    <div className="relative  bg-blue-400 display h-[400px] w-[400px] lg:h-[500px] lg:w-[500px]">
+    <div className="relative display h-[400px] w-[400px] lg:h-[500px] lg:w-[500px]">
       <div className="absolute lg:h-[200px] lg:w-[200px] h-[170px] w-[170px] bg-slate-600 bg-center bg-cover z-0 top-[65%] left-[65%]" />
       <div
         className="bg-cover bg-center absolute bg-black top-0 left-0 z-10 h-full w-full"

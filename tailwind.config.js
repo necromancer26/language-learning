@@ -38,6 +38,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    backdropFilter: {
+      none: "none",
+      blur: "blur(20px)",
+    },
     extend: {},
     container: {
       padding: {
@@ -65,5 +69,5 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-filters")],
 };
