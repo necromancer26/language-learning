@@ -1,5 +1,6 @@
 import React from "react";
 import BasicCard from "../reusables/basic-card";
+import OverlayCard from "../reusables/overlay-card";
 export default function ServicesSection() {
   return (
     <div>
@@ -13,6 +14,11 @@ export default function ServicesSection() {
           <BasicCard />
           <BasicCard />
         </div>
+        {/* <div className="flex justify-around items-center w-full mt-10 flex-col lg:flex-row">
+          <OverlayCard />
+          <OverlayCard />
+          <OverlayCard />
+        </div> */}
       </div>
       {/* <div className="h-[10vh] from[##03045e]"></div> */}
     </div>

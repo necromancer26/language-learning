@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 export default function Hero() {
   return (
     <div
@@ -30,30 +29,7 @@ export default function Hero() {
         <div className=" bg-blue-200 h-[200px] w-[200px] rounded-full bg-[url('../assets/asian-country.jpg')] bg-center bg-cover m-5"></div>
         <div className=" bg-blue-200 h-[200px] w-[200px] rounded-full bg-[url('../assets/african-country.jpg')] bg-center bg-cover m-5"></div> */}
         </div>
-
         <div className="w-1/2 h-[100vh]"></div>
-
-        {/* <div className="hero-content flex-col lg:flex-row bg-gray-300 hidden">
-        <Image
-          src="https://polydioms.com/wp-content/uploads/2022/12/pexels-nothing-ahead-4440720-scaled.jpg"
-          alt="placement image"
-          // className="max-w-sm rounded-lg shadow-2xl"
-          width={500}
-          height={300}
-          className="rounded-md"
-          // fill
-        />
-        <div>
-          <h1 className="text-5xl font-bold">Lorem Ipsum!</h1>
-          <p className="py-6">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-            corrupti neque, sapiente eos excepturi, sequi ipsam qui, libero
-            consequuntur modi culpa? Quas reprehenderit aperiam fugiat est rem
-            nobis incidunt deleniti.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
-        </div>
-      </div> */}
       </div>
     </div>
   );
