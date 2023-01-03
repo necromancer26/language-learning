@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-// import styles from "../styles/Home.module.css";
 import Hero from "../components/index/hero";
 import ServicesSection from "../components/index/services-section";
 import OtherServicesSection from "../components/index/other-services-section";
-import FillerSection from "../components/index/filler-serction";
+import FillerSection from "../components/index/filler-section";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function getServerSideProps() {

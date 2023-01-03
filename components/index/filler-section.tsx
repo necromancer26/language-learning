@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import AsianCountry from "../../assets/asian-country.jpg";
 import AfricanCountry from "../../assets/african-country.jpg";
@@ -20,7 +19,7 @@ export default function FillerSection() {
           sapiente recusandae pariatur perspiciatis?
         </span>
       </div>
-      <div className="w-full h-[500px] lg:w-1/2 lg:h-full flex justify-center items-center bg-gray-500">
+      <div className="w-full h-[500px] lg:w-1/2 lg:h-full flex justify-center items-center ">
         <div className=" grid grid-cols-2  items-stretch gap-4 h-[80%] w-[80%]">
           <div
             className="bg-[#2a9d8f] row-span-2 bg-center bg-cover"

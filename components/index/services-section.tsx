@@ -1,4 +1,3 @@
-import React from "react";
 import BasicCard from "../reusables/basic-card";
 import OverlayCard from "../reusables/overlay-card";
 export default function ServicesSection() {

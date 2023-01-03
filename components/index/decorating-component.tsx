@@ -1,6 +1,5 @@
 import Image from "next/image";
 import AsianCountry from "../../assets/asian-country.jpg";
-import React from "react";
 
 export default function DecoratingComponent() {
   return (
