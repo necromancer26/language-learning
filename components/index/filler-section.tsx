@@ -35,7 +35,7 @@ export default function FillerSection() {
                 cumque, alias obcaecati quis! Lorem ipsum dolor sit amet
                 <br />
                 consectetur adipisicing elit. Hic dolor ut alias qui doloribus impedit
-                modi id tenetur quia non! Repudiandae sint minus ut accusamus odio
+                modi id tenetur quia non! Repudiandae sint minus ut accusamus odios
                 sapiente recusandae pariatur perspiciatis?"
             />
           </animated.div>
