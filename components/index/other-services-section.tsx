@@ -1,8 +1,20 @@
-import React from "react";
-import GlassyCard from "../reusables/glassy-card";
 import DecoratingComponent from "./decorating-component";
+import { useSpring, animated } from "@react-spring/web";
+import { Waypoint } from "react-waypoint";
+import { useState } from "react";
 
 export default function OtherServicesSection() {
+  const [trigger, setTrigger] = useState(false);
+  const spring = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: trigger && { opacity: 1, y: 0 },
+    config: {
+      duration: 1000,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+  });
   return (
     <div
       className="lg:h-[100vh] bg-center bg-cover bg-fixed bg-green-500"
@@ -19,17 +31,24 @@ export default function OtherServicesSection() {
         <div className="flex justify-center items-center lg:w-1/2 w-full h-[700px]">
           <DecoratingComponent />
         </div>
-        <div className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5">
-          <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
-            Do more with Polydioms!
-          </h1>
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima
-            eligendi animi ex magnam corrupti. Nobis, voluptate! Veritatis,
-            officia autem optio in iste sint sequi perspiciatis eos velit, culpa
-            expedita?
-          </span>
-        </div>
+        <Waypoint onEnter={() => setTrigger(true)}>
+          {trigger && (
+            <animated.div
+              className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5"
+              style={spring}
+            >
+              <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
+                Do more with Polydioms!
+              </h1>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                minima eligendi animi ex magnam corrupti. Nobis, voluptate!
+                Veritatis, officia autem optio in iste sint sequi perspiciatis
+                eos velit, culpa expedita?
+              </span>
+            </animated.div>
+          )}
+        </Waypoint>
       </div>
     </div>
   );

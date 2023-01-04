@@ -42,7 +42,18 @@ module.exports = {
       none: "none",
       blur: "blur(20px)",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        glass_opacity: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "0.5" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "opacity-transition": "glass_opacity 0.5s ",
+      },
+    },
     container: {
       padding: {
         DEFAULT: "1rem",

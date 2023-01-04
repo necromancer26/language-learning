@@ -4,6 +4,8 @@ import Hero from "../components/index/hero";
 import ServicesSection from "../components/index/services-section";
 import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
+// import ParallaxComponent from "../components/index/parallax-effect";
+import MyComponent from "../components/index/my-component";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function getServerSideProps() {
@@ -20,6 +22,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <ParallaxComponent /> */}
       <Hero />
       <FillerSection />
       <OtherServicesSection />

@@ -1,24 +1,47 @@
 import Image from "next/image";
 import AsianCountry from "../../assets/asian-country.jpg";
 import AfricanCountry from "../../assets/african-country.jpg";
+import { useSpring, animated } from "@react-spring/web";
+import { Waypoint } from "react-waypoint";
+import { useState } from "react";
+
 export default function FillerSection() {
+  const [trigger, setTrigger] = useState(false);
+  const spring = useSpring({
+    from: { opacity: 0, y: 100 },
+    to: { opacity: 1, y: 0 },
+    config: {
+      duration: 1000,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+  });
   return (
     <div className="lg:h-[100vh] bg-slate-100 flex flex-col md:flex-col lg:flex-row sm:flex-col lg:py-0 py-10">
-      <div className="w-full lg:w-1/2 flex flex-col justify-center items-center h-full pl-8 ">
-        <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
-          Learn with your preferred language
-        </h1>
-        <span className="mb-5 text-m font-bold text-gray-600 font-[spectral]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-          facere autem aliquam totam excepturi eius sapiente quisquam
-          consectetur numquam. Rerum, veniam! Provident commodi magnam veritatis
-          nesciunt cumque, alias obcaecati quis! Lorem ipsum dolor sit amet
-          <br />
-          consectetur adipisicing elit. Hic dolor ut alias qui doloribus impedit
-          modi id tenetur quia non! Repudiandae sint minus ut accusamus odio
-          sapiente recusandae pariatur perspiciatis?
-        </span>
-      </div>
+      <Waypoint onEnter={() => setTrigger(true)}>
+        {trigger && (
+          <animated.div
+            className="w-full lg:w-1/2 flex flex-col justify-center items-center h-full pl-8 "
+            style={spring}
+          >
+            <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
+              Learn with your preferred language
+            </h1>
+            <span className="mb-5 text-m font-bold text-gray-600 font-[spectral]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              facere autem aliquam totam excepturi eius sapiente quisquam
+              consectetur numquam. Rerum, veniam! Provident commodi magnam
+              veritatis nesciunt cumque, alias obcaecati quis! Lorem ipsum dolor
+              sit amet
+              <br />
+              consectetur adipisicing elit. Hic dolor ut alias qui doloribus
+              impedit modi id tenetur quia non! Repudiandae sint minus ut
+              accusamus odio sapiente recusandae pariatur perspiciatis?
+            </span>
+          </animated.div>
+        )}
+      </Waypoint>
       <div className="w-full h-[500px] lg:w-1/2 lg:h-full flex justify-center items-center ">
         <div className=" grid grid-cols-2  items-stretch gap-4 h-[80%] w-[80%]">
           <div
