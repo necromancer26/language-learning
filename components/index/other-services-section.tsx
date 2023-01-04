@@ -2,12 +2,13 @@ import DecoratingComponent from "./decorating-component";
 import { useSpring, animated } from "@react-spring/web";
 import { Waypoint } from "react-waypoint";
 import { useState } from "react";
-
+import TiteDescription from "../reusables/title-description";
 export default function OtherServicesSection() {
   const [trigger, setTrigger] = useState(false);
   const spring = useSpring({
-    from: { opacity: 0, y: 100 },
-    to: trigger && { opacity: 1, y: 0 },
+    from: { opacity: 0, x: 30 },
+    to: trigger && { opacity: 1, x: 0 },
+    delay: 500,
     config: {
       duration: 1000,
       mass: 5,
@@ -34,18 +35,20 @@ export default function OtherServicesSection() {
         <Waypoint onEnter={() => setTrigger(true)}>
           {trigger && (
             <animated.div
-              className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5"
               style={spring}
+              className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5 p-10"
             >
-              <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
-                Do more with Polydioms!
-              </h1>
-              <span>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                minima eligendi animi ex magnam corrupti. Nobis, voluptate!
-                Veritatis, officia autem optio in iste sint sequi perspiciatis
-                eos velit, culpa expedita?
-              </span>
+              <TiteDescription
+                title="   Do more with Polydioms!"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere
+                autem aliquam totam excepturi eius sapiente quisquam consectetur
+                numquam. Rerum, veniam! Provident commodi magnam veritatis nesciunt
+                cumque, alias obcaecati quis! Lorem ipsum dolor sit amet
+                <br />
+                consectetur adipisicing elit. Hic dolor ut alias qui doloribus impedit
+                modi id tenetur quia non! Repudiandae sint minus ut accusamus odio
+                sapiente recusandae pariatur perspiciatis?"
+              />
             </animated.div>
           )}
         </Waypoint>

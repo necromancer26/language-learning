@@ -24,7 +24,7 @@ export default function Hero() {
   });
   return (
     <div
-      className="bg-cover bg-center bg-fixed"
+      className="bg-cover bg-center lg:bg-fixed"
       style={{
         backgroundImage:
           "url('https://polydioms.com/wp-content/uploads/2022/12/pexels-nothing-ahead-4440720-scaled.jpg')",
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="lg:w-1/2 h-[100vh] flex justify-center items-start flex-col p-20 ease-linear">
           <animated.h1
             style={spring}
-            className="mb-5 text-5xl font-bold text-white font-[playfairdisplay]"
+            className="mb-5 lg:text-5xl text-4xl font-bold text-white font-[playfairdisplay]"
           >
             LANGUAGE BARRIER <br />
             <span className="font-[spectral]">

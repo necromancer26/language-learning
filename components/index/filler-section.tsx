@@ -4,12 +4,14 @@ import AfricanCountry from "../../assets/african-country.jpg";
 import { useSpring, animated } from "@react-spring/web";
 import { Waypoint } from "react-waypoint";
 import { useState } from "react";
+import TiteDescription from "../reusables/title-description";
 
 export default function FillerSection() {
   const [trigger, setTrigger] = useState(false);
   const spring = useSpring({
-    from: { opacity: 0, y: 100 },
-    to: { opacity: 1, y: 0 },
+    from: { opacity: 0, x: -30 },
+    to: trigger && { opacity: 1, x: 0 },
+    delay: 500,
     config: {
       duration: 1000,
       mass: 5,
@@ -18,27 +20,24 @@ export default function FillerSection() {
     },
   });
   return (
-    <div className="lg:h-[100vh] bg-slate-100 flex flex-col md:flex-col lg:flex-row sm:flex-col lg:py-0 py-10">
+    <div className="lg:h-[100vh] bg-slate-100 flex flex-col md:flex-col lg:flex-row sm:flex-col lg:py-0 ">
       <Waypoint onEnter={() => setTrigger(true)}>
         {trigger && (
           <animated.div
-            className="w-full lg:w-1/2 flex flex-col justify-center items-center h-full pl-8 "
             style={spring}
+            className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5 p-10"
           >
-            <h1 className="mb-5 text-5xl font-bold text-gray-600 font-[spectral]">
-              Learn with your preferred language
-            </h1>
-            <span className="mb-5 text-m font-bold text-gray-600 font-[spectral]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              facere autem aliquam totam excepturi eius sapiente quisquam
-              consectetur numquam. Rerum, veniam! Provident commodi magnam
-              veritatis nesciunt cumque, alias obcaecati quis! Lorem ipsum dolor
-              sit amet
-              <br />
-              consectetur adipisicing elit. Hic dolor ut alias qui doloribus
-              impedit modi id tenetur quia non! Repudiandae sint minus ut
-              accusamus odio sapiente recusandae pariatur perspiciatis?
-            </span>
+            <TiteDescription
+              title="Learn with your preferred language"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere
+                autem aliquam totam excepturi eius sapiente quisquam consectetur
+                numquam. Rerum, veniam! Provident commodi magnam veritatis nesciunt
+                cumque, alias obcaecati quis! Lorem ipsum dolor sit amet
+                <br />
+                consectetur adipisicing elit. Hic dolor ut alias qui doloribus impedit
+                modi id tenetur quia non! Repudiandae sint minus ut accusamus odio
+                sapiente recusandae pariatur perspiciatis?"
+            />
           </animated.div>
         )}
       </Waypoint>
