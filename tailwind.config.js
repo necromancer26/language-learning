@@ -53,6 +53,10 @@ module.exports = {
       animation: {
         "opacity-transition": "glass_opacity 0.5s ",
       },
+      flexGrow: {
+        '1': 1,
+        '2': 2,
+      }
     },
     container: {
       padding: {

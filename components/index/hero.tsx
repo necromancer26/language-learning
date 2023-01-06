@@ -1,18 +1,29 @@
 import { useSpring, animated } from "@react-spring/web";
 export default function Hero() {
-  const spring = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+  const curtain = useSpring({
+    from: { opacity: 0,x:-100 },
+    to: { opacity: 1,x:0 },
     config: {
-      duration: 300,
+      duration: 500,
       mass: 5,
       friction: 120,
       tension: 120,
     },
   });
+  const spring = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: {
+      duration: 500,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+    delay:500
+  });
   const delayed = useSpring({
     // from: { opacity: 0, y: 20 },
-    delay: 300,
+    delay: 600,
     from: { opacity: 0, y: 10 },
     to: { opacity: 1, y: 0 },
     // config: {
@@ -31,8 +42,7 @@ export default function Hero() {
       }}
     >
       <div className="hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]">
-        {/* bg-gradient-to-r from-[#03045e] */}
-        <div className="lg:w-1/2 h-[100vh] flex justify-center items-start flex-col p-20 ease-linear">
+        <animated.div className="lg:w-[45%] h-[100vh] flex justify-center items-start flex-col p-20   bg-slate-900 ease-in-out" style={curtain}>
           <animated.h1
             style={spring}
             className="mb-5 lg:text-5xl text-4xl font-bold text-white font-[playfairdisplay]"
@@ -48,10 +58,10 @@ export default function Hero() {
             officia minima eos aperiam amet iste atque mollitia animi ipsa quam
             earum?
           </animated.span>
-          <animated.a className="btn ease-linear" style={delayed}>
+          <animated.a className="btn ease-linear bg-teal-500 hover:bg-slate-600" style={delayed}>
             Explore our services
           </animated.a>
-        </div>
+        </animated.div>
         <div className="w-1/2 h-[100vh]"></div>
       </div>
     </div>

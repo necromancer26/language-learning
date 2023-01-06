@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import PolydiomsLogo from "../../assets/polydioms-logo.svg";
+import PolydiomsLogo from "../../public/assets/polydioms-logo.svg";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
@@ -82,17 +81,20 @@ export default function Navbar() {
           </ul>
         </div>
         {/* <Image src={PolydiomsLogo} width={100} className=" ml-4" /> */}
-        <Image
-          src={
-            navbar
-              ? PolydiomsLogo
-              : "https://polydioms.com/wp-content/uploads/2022/07/Asset-3_white.svg"
-          }
-          alt="Logo Polydioms"
-          width={100}
-          height={100}
-          className="ml-4"
-        />
+        <a href="/">
+          {" "}
+          <Image
+            src={
+              navbar
+                ? PolydiomsLogo
+                : "https://polydioms.com/wp-content/uploads/2022/07/Asset-3_white.svg"
+            }
+            alt="Logo Polydioms"
+            width={100}
+            height={100}
+            className="ml-10"
+          />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -145,6 +147,9 @@ export default function Navbar() {
                 <Link href="consulting">Consulting</Link>
               </li>
             </ul>
+          </li>
+          <li>
+            <Link href="about-us">About Us</Link>
           </li>
           <li>
             <Link href="faqs">FAQs</Link>

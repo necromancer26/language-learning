@@ -4,7 +4,7 @@ export default function ServicesSection() {
   return (
     <div>
       {/* <div className="h-[10vh] bg-gradient-to-t from-indigo-500"></div> */}
-      <div className="flex flex-col justify-center items-center lg:h-[100vh] lg:bg-slate-50">
+      <div className="flex flex-col justify-center items-center lg:h-[100vh] lg:bg-slate-100">
         <h1 className="text-5xl font-bold text-gray-600 font-[spectral] text-center mt-5">
           What Polydioms Has To Offer
         </h1>

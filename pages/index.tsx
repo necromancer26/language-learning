@@ -1,11 +1,11 @@
-import Head from "next/head";
+
 import { Inter } from "@next/font/google";
 import Hero from "../components/index/hero";
 import ServicesSection from "../components/index/services-section";
 import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
+import Values from "../components/index/values";
 // import ParallaxComponent from "../components/index/parallax-effect";
-import MyComponent from "../components/index/my-component";
 const inter = Inter({ subsets: ["latin"] });
 
 export async function getServerSideProps() {
@@ -16,17 +16,12 @@ export async function getServerSideProps() {
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Polydioms</title>
-        <meta name="description" content="Polydioms, language services" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       {/* <ParallaxComponent /> */}
       <Hero />
       <FillerSection />
       <OtherServicesSection />
       <ServicesSection />
+      <Values/>
     </>
   );
 }
