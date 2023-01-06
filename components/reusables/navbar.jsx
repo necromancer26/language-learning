@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
         {/* <Image src={PolydiomsLogo} width={100} className=" ml-4" /> */}
         <a href="/">
-          {" "}
+
           <Image
             src={
               navbar

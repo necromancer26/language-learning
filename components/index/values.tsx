@@ -9,7 +9,7 @@ export default function Values() {
         <div className="lg:w-1/3 bg-slate-200 text-slate-800 flex justify-center items-center hover:flex-[2_2_0%] flex-1 transition-all">
           <h3 className="mb-5 text-5xl font-bold  font-[spectral]">
             Reliability<i className="fa-solid fa-globe text-5xl"></i>
-          </h3>
+          </h3>≥
         </div>
         <div className="lg:w-1/3 bg-slate-300 flex justify-center items-center flex-1 hover:flex-[2_2_0%]  transition-all">
           <h3 className="mb-5 text-5xl font-bold  font-[spectral]">
