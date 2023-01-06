@@ -81,7 +81,7 @@ export default function Navbar() {
           </ul>
         </div>
         {/* <Image src={PolydiomsLogo} width={100} className=" ml-4" /> */}
-        <a href="/">
+        <Link href="/">
 
           <Image
             src={
@@ -94,7 +94,7 @@ export default function Navbar() {
             height={100}
             className="ml-10"
           />
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
