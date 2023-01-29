@@ -4,8 +4,8 @@ import ServicesSection from "../components/index/services-section";
 import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
 import Values from "../components/index/values";
-import Footer from "../components/reusables/footer";
-import Testimonials from "../components/index/testimonials";
+
+import TestimonialsContainer from "../components/index/testimonials-container";
 // import ParallaxComponent from "../components/index/parallax-effect";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function Home() {
       <OtherServicesSection />
       <ServicesSection />
       <Values />
-      <Testimonials />
+      <TestimonialsContainer />
     </>
   );
 }
