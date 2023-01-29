@@ -42,9 +42,9 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 lg:text-5xl lg:w-full text-4xl font-bold text-white font-[playfairdisplay] relative h-1/3 flex justify-start items-center"
+            className="mb-5 lg:text-5xl lg:w-full text-4xl font-bold text-white font-[playfairdisplay] relative "
           >
-            LANGUAGE BARRIER <br />
+            <span>LANGUAGE BARRIER</span> <br />
             <span className="font-[spectral]">
               SHALL NOT <br /> HINDER <br /> YOUR SUCCESS
             </span>
@@ -54,18 +54,18 @@ export default function Hero() {
                 3000, // Waits 1s
                 "SHALL NOT HINDER YOUR SUCCESS!", // Deletes 'One' and types 'Two'
                 3000, // Waits 2s
-                () => {
-                  console.log("Done typing!"); // Place optional callbacks anywhere in the array
-                },
+                // () => {
+                //   console.log("Done typing!"); // Place optional callbacks anywhere in the array
+                // },
               ]}
               wrapper="div"
               cursor={true}
               repeat={Infinity}
               style={{ fontSize: "1.1em" }}
-              speed={200}
+              speed={99}
             /> */}
           </animated.h1>
-          <animated.span className="text-gray-300 mb-5 h-1/2 " style={spring}>
+          <animated.span className="text-gray-300 mb-5  " style={spring}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum
             delectus, velit eligendi similique eius cum temporibus voluptatum
             officia minima eos aperiam amet iste atque mollitia animi ipsa quam
