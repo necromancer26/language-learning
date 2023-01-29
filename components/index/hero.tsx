@@ -44,11 +44,11 @@ export default function Hero() {
             style={spring}
             className="mb-5 lg:text-5xl lg:w-full text-4xl font-bold text-white font-[playfairdisplay] relative h-1/3 flex justify-start items-center"
           >
-            {/* LANGUAGE BARRIER <br />
+            LANGUAGE BARRIER <br />
             <span className="font-[spectral]">
               SHALL NOT <br /> HINDER <br /> YOUR SUCCESS
-            </span> */}
-            <TypeAnimation
+            </span>
+            {/* <TypeAnimation
               sequence={[
                 "LANGUAGE BARRIER", // Types 'One'
                 3000, // Waits 1s
@@ -63,7 +63,7 @@ export default function Hero() {
               repeat={Infinity}
               style={{ fontSize: "1.1em" }}
               speed={200}
-            />
+            /> */}
           </animated.h1>
           <animated.span className="text-gray-300 mb-5 h-1/2 " style={spring}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum
