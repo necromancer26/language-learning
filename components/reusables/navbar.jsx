@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import PolydiomsLogo from "../../public/assets/polydioms-logo.svg";
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(true);
   const changeBackground = () => {
     if (window.scrollY >= 66) {
       setNavbar(true);
@@ -24,26 +24,34 @@ export default function Navbar() {
       className={`navbar fixed z-50 ease-in  ${
         navbar
           ? " bg-slate-100/[0.5] backdrop-blur-md"
-          : "bg-transparent text-white"
+          : "bg-transparent text-white transition-all"
       }`}
     >
-      <div className="navbar-start">
+      <div className="navbar-start transition-all">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+            <label className="swap swap-rotate">
+              <input type="checkbox" />
+              <svg
+                className="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+              </svg>
+
+              <svg
+                className="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+              </svg>
+            </label>
           </label>
           <ul
             tabIndex={0}
@@ -80,9 +88,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        {/* <Image src={PolydiomsLogo} width={100} className=" ml-4" /> */}
-        <Link href="/">
-
+        <Link href="/" className=" transition-all">
           <Image
             src={
               navbar
@@ -92,7 +98,7 @@ export default function Navbar() {
             alt="Logo Polydioms"
             width={100}
             height={100}
-            className="ml-10"
+            className="ml-10 transition-all"
           />
         </Link>
       </div>

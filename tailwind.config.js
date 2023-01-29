@@ -45,18 +45,19 @@ module.exports = {
     extend: {
       keyframes: {
         glass_opacity: {
-          "0%": { opacity: "0" },
-          "50%": { opacity: "0.5" },
+          "0%": { opacity: "1" },
+          "50%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
       },
       animation: {
         "opacity-transition": "glass_opacity 0.5s ",
+        "infinite-opacity":"glass_opacity 20s infinite"
       },
       flexGrow: {
         '1': 1,
         '2': 2,
-      }
+      },
     },
     container: {
       padding: {
@@ -84,5 +85,5 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [require("daisyui"), require("tailwindcss-filters")],
+  plugins: [require("daisyui"), require("tailwindcss-filters"),require("tailwindcss-animation-delay"),],
 };
