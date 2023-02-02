@@ -25,10 +25,22 @@ export default function TestimonialsContainer() {
           </p>
         </div>
         <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
-          <Testimonial title="Developer at Open AI" name="Bonnie Green" />
-          <Testimonial title="Lead designer at Dropbox" name="Roberta Casas" />
-          <Testimonial title="Software Engineer at Facebook" name="Jese Leos" />
-          <Testimonial title="CTO at Google" name="Joseph McFall" />
+          <Testimonial
+            title="Developer at Open AI"
+            name="Bonnie Green"
+            bg="50"
+          />
+          <Testimonial
+            title="Lead designer at Dropbox"
+            name="Roberta Casas"
+            bg="100"
+          />
+          <Testimonial
+            title="Software Engineer at Facebook"
+            name="Jese Leos"
+            bg="200"
+          />
+          <Testimonial title="CTO at Google" name="Joseph McFall" bg="300" />
         </div>
         <div className="text-center">
           <a

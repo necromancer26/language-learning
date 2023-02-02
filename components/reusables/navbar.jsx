@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import PolydiomsLogo from "../../public/assets/polydioms-logo.svg";
 export default function Navbar() {
-  const [navbar, setNavbar] = useState(true);
+  const [navbarIsScrolled, setNavbarIsScrolled] = useState(true);
+  const [dropdownIsClicked, setDropdownIsClicked] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 66) {
-      setNavbar(true);
+      setNavbarIsScrolled(true);
     } else {
-      setNavbar(false);
+      setNavbarIsScrolled(false);
     }
   };
 
@@ -21,15 +22,23 @@ export default function Navbar() {
 
   return (
     <div
-      className={`navbar fixed z-50 ease-in  ${
-        navbar
+      className={`navbar fixed z-50 ease-in m-0 ${
+        navbarIsScrolled
           ? " bg-slate-100/[0.5] backdrop-blur-md"
           : "bg-transparent text-white transition-all"
       }`}
     >
-      <div className="navbar-start transition-all">
+      <div className="navbar-start transition-all w-full">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <button
+            tabIndex={0}
+            className="btn btn-ghost lg:hidden"
+            onClick={(e) => {
+              e.preventDefault();
+              setDropdownIsClicked(!dropdownIsClicked);
+              console.log(dropdownIsClicked);
+            }}
+          >
             <label className="swap swap-rotate">
               <input type="checkbox" />
               <svg
@@ -52,46 +61,48 @@ export default function Navbar() {
                 <polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
               </svg>
             </label>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>item</li>
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabIndex={0}>
-              <a className="justify-between">
-                Parent
-                <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+          </button>
+          {dropdownIsClicked && (
+            <ul
+              tabIndex={0}
+              className={`menu menu-compact dropdown-content m-0 p-2 shadow rounded-box bg-slate-400/50 h-[100vh] w-[100vw] backdrop-blur-sm`}
+            >
+              <li>item</li>
+              <li>
+                <a>Item 1</a>
+              </li>
+              <li tabIndex={0}>
+                <a className="justify-between">
+                  Parent
+                  <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+                </a>
+                <ul className="p-2 bg-base-100">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
+          )}
         </div>
         <Link href="/" className=" transition-all">
           <Image
             src={
-              navbar
+              navbarIsScrolled
                 ? PolydiomsLogo
                 : "https://polydioms.com/wp-content/uploads/2022/07/Asset-3_white.svg"
             }

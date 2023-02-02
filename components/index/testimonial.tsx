@@ -3,10 +3,13 @@ import React from "react";
 export default function Testimonial({
   title = "Developer at OpenAI",
   name = "John Doe",
+  bg = "200",
 }) {
   return (
-    <figure className="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700">
-      <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
+    <figure
+      className={`flex flex-col justify-center items-center p-8 text-center border-none md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700 bg-slate-${bg}   `}
+    >
+      <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
           Speechless with how easy this was to integrate
         </h3>
