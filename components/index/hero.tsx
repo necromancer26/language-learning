@@ -31,8 +31,7 @@ export default function Hero() {
     <div
       className="bg-cover bg-center lg:bg-fixed snap-center"
       style={{
-        backgroundImage:
-          "url('https://polydioms.com/wp-content/uploads/2022/12/pexels-nothing-ahead-4440720-scaled.jpg')",
+        backgroundImage: "url('/assets/hero.jpg')",
       }}
     >
       <div className="hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]">

@@ -17,7 +17,7 @@ export default function OtherServicesSection() {
     },
   });
   return (
-    <div className="lg:h-[100vh] snap-center">
+    <div className="lg:h-[100vh] snap-center z-10">
       <div className="bg-slate-900 h-full flex flex-col-reverse lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex justify-center items-center lg:w-1/2 w-full h-[700px]">
           <DecoratingComponent />
