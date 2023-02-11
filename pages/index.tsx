@@ -6,6 +6,10 @@ import FillerSection from "../components/index/filler-section";
 import Values from "../components/index/values";
 
 import TestimonialsContainer from "../components/index/testimonials-container";
+import FillerSectionAI from "../components/index/ai-filler-section";
+import AIComponent from "../components/index/ai-component";
+import AnimatedPricing from "../components/reusables/pricing";
+
 // import ParallaxComponent from "../components/index/parallax-effect";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +27,10 @@ export default function Home() {
       <ServicesSection />
       <Values />
       <TestimonialsContainer />
+      <FillerSectionAI />
+
+      <AnimatedPricing />
+      <AIComponent />
     </>
   );
 }
