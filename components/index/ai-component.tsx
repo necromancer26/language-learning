@@ -1,5 +1,8 @@
 import React from "react";
-
+import Learning from "../../public/assets/learning.svg";
+import Workshop from "../../public/assets/workshop.svg";
+import Translation from "../../public/assets/translate.svg";
+import Image from "next/image";
 export default function AIComponent() {
   return (
     <section className="bg-gray-100 py-12">
@@ -15,9 +18,19 @@ export default function AIComponent() {
         <div className="flex flex-wrap -mx-2">
           <div className="w-full md:w-1/3 px-2 mb-4">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-lg font-medium text-gray-800 mb-4">
-                Feature 1
-              </h3>
+              <div className="flex my-5 ">
+                <Image
+                  // fill
+                  src={Learning}
+                  alt="learning icon"
+                  // width={50}
+                  height={40}
+                  className=""
+                />
+                <h3 className="text-lg font-medium text-gray-800 mb-4 ml-4">
+                  Learning
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, lacus at facilisis commodo, quam velit blandit velit,
@@ -27,9 +40,19 @@ export default function AIComponent() {
           </div>
           <div className="w-full md:w-1/3 px-2 mb-4">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-lg font-medium text-gray-800 mb-4">
-                Feature 2
-              </h3>
+              <div className="flex my-5">
+                <Image
+                  // fill
+                  src={Translation}
+                  alt="learning icon"
+                  // width={50}
+                  height={40}
+                  className=""
+                />
+                <h3 className="text-lg font-medium text-gray-800 mb-4 ml-4">
+                  Translation
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, lacus at facilisis commodo, quam velit blandit velit,
@@ -39,9 +62,19 @@ export default function AIComponent() {
           </div>
           <div className="w-full md:w-1/3 px-2 mb-4">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-lg font-medium text-gray-800 mb-4">
-                Feature 3
-              </h3>
+              <div className="flex my-5">
+                <Image
+                  // fill
+                  src={Workshop}
+                  alt="learning icon"
+                  // width={50}
+                  height={40}
+                  className=""
+                />
+                <h3 className="text-lg font-medium text-gray-800 mb-4 ml-4">
+                  Workshops
+                </h3>
+              </div>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, lacus at facilisis commodo, quam velit blandit velit,
