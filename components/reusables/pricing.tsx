@@ -33,13 +33,35 @@ const Pricing = () => {
         "Priority support",
       ],
     },
+    {
+      title: "Pro",
+      price: "$39.99",
+      features: [
+        "Access to course content",
+        "Downloadable resources",
+        "Certificate of completion",
+        "Live Q&A sessions",
+        "Priority support",
+      ],
+    },
+    {
+      title: "Pro",
+      price: "$39.99",
+      features: [
+        "Access to course content",
+        "Downloadable resources",
+        "Certificate of completion",
+        "Live Q&A sessions",
+        "Priority support",
+      ],
+    },
   ];
 
   return (
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
           {courses.map((course, index) => (
             <div
               key={course.title}

@@ -26,10 +26,10 @@ export default function Home() {
       <OtherServicesSection />
       <ServicesSection />
       {/* <Values /> */}
-      <TestimonialsContainer />
-      <FillerSectionAI />
       <AnimatedPricing />
+      <FillerSectionAI />
       <AIComponent />
+      <TestimonialsContainer />
     </>
   );
 }
