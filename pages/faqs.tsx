@@ -48,9 +48,10 @@ export default function Faqs() {
                   What does lifetime access exactly mean?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Once you have purchased either the design, code, or both
-                  packages, you will have access to all of the future updates
-                  based on the roadmap, free of charge.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Explicabo a commodi incidunt et quasi distinctio ab vitae
+                  ipsum est, voluptate beatae ad officia aperiam! Error
+                  reprehenderit voluptatum dolorem blanditiis hic.
                 </p>
               </div>
               <div className="mb-10">
@@ -202,15 +203,11 @@ export default function Faqs() {
                   What is the difference between Windster and Tailwind UI?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Although both Windster and Tailwind UI are built for
-                  integration with Tailwind CSS, the main difference is in the
-                  design, the pages, the extra components and UI elements that
-                  Windster includes.
-                </p>
-                <p className="text-gray-500 dark:text-gray-400">
-                  Additionally, Windster is a project that is still in
-                  development, and later it will include both the application,
-                  marketing, and e-commerce UI interfaces.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis, vel? Illo itaque maiores vel? Iusto praesentium
+                  laborum consectetur aut officia nesciunt expedita nam,
+                  blanditiis, perspiciatis dolor voluptatem? Omnis, dolorum
+                  rerum.
                 </p>
               </div>
               <div className="mb-10">
@@ -230,10 +227,10 @@ export default function Faqs() {
                   Can I use Windster in open-source projects?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Generally, it is accepted to use Windster in open-source
-                  projects, as long as it is not a UI library, a theme, a
-                  template, a page-builder that would be considered as an
-                  alternative to Windster itself.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad
+                  illo alias voluptatibus, facere consequatur sunt quibusdam.
+                  Deleniti, quas minus! Debitis cum earum officiis quisquam vel
+                  facere deleniti reprehenderit ullam laborum.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   With that being said, feel free to use this design kit for
