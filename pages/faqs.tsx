@@ -85,7 +85,7 @@ export default function Faqs() {
                   >
                     contact us
                   </a>{" "}
-                  and we'll help you out as soon as we can.
+                  {"and we'll help you out as soon as we can."}
                 </p>
               </div>
               <div className="mb-10">
