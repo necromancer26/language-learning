@@ -13,6 +13,12 @@ module.exports = {
         port: "",
         pathname: "/wp-content/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+        port: "",
+        pathname: "/photos/**",
+      },
     ],
   },
 };

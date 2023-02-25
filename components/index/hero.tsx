@@ -36,7 +36,7 @@ export default function Hero() {
     >
       <div className="hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]">
         <animated.div
-          className="lg:w-[45%] h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out"
+          className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out"
           style={curtain}
         >
           <animated.h1

@@ -1,10 +1,9 @@
 import { Inter } from "@next/font/google";
 import Hero from "../components/index/hero";
-import ServicesSection from "../components/index/services-section";
+// import ServicesSection from "../components/index/services-section";
 import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
-import Values from "../components/index/values";
-
+// import Values from "../components/index/values";
 import TestimonialsContainer from "../components/index/testimonials-container";
 import FillerSectionAI from "../components/index/ai-filler-section";
 import AIComponent from "../components/index/ai-component";
@@ -24,7 +23,7 @@ export default function Home() {
       <Hero />
       <FillerSection />
       <OtherServicesSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       {/* <Values /> */}
       <AnimatedPricing />
       <FillerSectionAI />
