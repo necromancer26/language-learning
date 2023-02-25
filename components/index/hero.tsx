@@ -41,7 +41,7 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 lg:text-5xl lg:w-full text-4xl font-bold text-white font-[playfairdisplay] relative "
+            className="mb-5 text-4xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-[spectral] relative "
           >
             <span>LANGUAGE BARRIER</span> <br />
             <span className="font-[spectral]">

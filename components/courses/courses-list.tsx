@@ -9,7 +9,10 @@ export default function CoursesList({courses}:CourseList) {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 md:grid-cols-2">
 
       {courses?.map((course: any, idx: number) => (
-        <BasicCard course={course} key={idx} />
+        <>
+        <BasicCard course={course} key={idx} idx={idx} />
+
+        </>
       ))}
       {/* <BasicCard />
       <BasicCard />

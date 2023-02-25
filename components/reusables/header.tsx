@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-export default function Header({ title = "Header" }) {
+export default function Header({ title = "Header",description ="description"}:any) {
   const [blur, setBlur] = useState(10);
   const changeBackground = () => {
     if (window.scrollY >= 1) {
       // setNavbarIsScrolled(true);
-      setBlur(blur+1);
+      setBlur(blur + 1);
     } else {
       // setNavbarIsScrolled(false);
       setBlur(0);
@@ -20,18 +20,23 @@ export default function Header({ title = "Header" }) {
 
   return (
     <section className="pt-0 h-[30vh] lg:h-[50vh] font-[spectral] bg-slate-900 w-full flex ">
-      <div className=" text-slate-100 flex justify-center items-center w-full mx-auto">
-        <div className="w-1/2 ">
-          <h1 className="mb-5  text-5xl font-bold text-center w-full ">
-            {title}
-          </h1>
-
-
+      <div className=" text-slate-100 flex justify-center items-center w-full ">
+        <div className="w-1/2 flex justify-center flex-col items-center h-full">
+          <div className=" lg:w-[80%] flex justify-center items-start flex-col w-full">
+            <h1 className="mb-5  text-5xl font-bold text-start ">
+              {title}
+            </h1>
+            <p className=" text-xl text-start w-full">
+              {/* Online English classes to practice speaking together */}
+              {description}
+            </p>
+          </div>
         </div>
         <div
           className="w-1/2 h-full bg-cover bg-center"
           style={{
-            backgroundImage:"url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1546&q=80')"
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1546&q=80')",
           }}
         >
           <div
