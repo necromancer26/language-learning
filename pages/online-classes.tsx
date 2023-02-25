@@ -2,7 +2,7 @@ import CoursesList from "../components/courses/courses-list";
 import Header from "../components/reusables/header";
 import Courses from "../interfaces/Courses";
 
-export default function OnlineClasses({ courses }: Courses) {
+export default function OnlineClasses({ courses }: any) {
   return (
     <>
       <Header title="Online classes to learn your preferred language" 
