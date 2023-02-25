@@ -10,7 +10,7 @@ const Pricing = () => {
       features: [
         "Access to course content",
         "Limited resources",
-        "Certificate of completion",
+        "Access to one class",
       ],
     },
     {
@@ -23,8 +23,19 @@ const Pricing = () => {
       ],
     },
     {
-      title: "Pro",
-      price: "$39.99",
+      title: "Standard",
+      price: "$59.99",
+      features: [
+        "Access to course content",
+        "Downloadable resources",
+        "Certificate of completion",
+        "Live Q&A sessions",
+        "Priority support",
+      ],
+    },
+    {
+      title: "Advanced",
+      price: "$159.99",
       features: [
         "Access to course content",
         "Downloadable resources",
@@ -35,18 +46,7 @@ const Pricing = () => {
     },
     {
       title: "Pro",
-      price: "$39.99",
-      features: [
-        "Access to course content",
-        "Downloadable resources",
-        "Certificate of completion",
-        "Live Q&A sessions",
-        "Priority support",
-      ],
-    },
-    {
-      title: "Pro",
-      price: "$39.99",
+      price: "$299.99",
       features: [
         "Access to course content",
         "Downloadable resources",
@@ -61,7 +61,7 @@ const Pricing = () => {
     <section className="bg-gray-100 py-12">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 md:grid-col-1 lg:grid-cols-5 gap-5">
           {courses.map((course, index) => (
             <div
               key={course.title}
@@ -73,12 +73,12 @@ const Pricing = () => {
               <h3 className="text-xl font-medium text-gray-800 mb-4">
                 {course.title}
               </h3>
-              <h2 className="text-5xl font-medium text-gray-800 mb-4">
+              <h2 className="text-5xl lg:text-4xl md:text-3xl font-medium text-gray-800 mb-4">
                 {course.price}
               </h2>
               <ul className="list-disc list-inside">
                 {course.features.map((feature) => (
-                  <li key={feature} className="mb-2">
+                  <li key={feature} className="mb-2 ">
                     {feature}
                   </li>
                 ))}

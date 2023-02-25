@@ -19,21 +19,21 @@ export default function Header({ title = "Header",description ="description"}:an
   }, []);
 
   return (
-    <section className="pt-0 h-[30vh] lg:h-[50vh] font-[spectral] bg-slate-900 w-full flex ">
-      <div className=" text-slate-100 flex justify-center items-center w-full ">
-        <div className="w-1/2 flex justify-center flex-col items-center h-full">
-          <div className=" lg:w-[80%] flex justify-center items-start flex-col w-full">
-            <h1 className="mb-5  text-5xl font-bold text-start ">
+    <section className="pt-0 h-full lg:h-[50vh] font-[spectral] bg-slate-200 md:bg-slate-200 w-full flex">
+      <div className=" text-slate-900 md:text-slate-700 flex flex-col-reverse lg:flex-row justify-center items-center w-full my-20 lg:my-0">
+        <div className="w-full lg:w-1/2 flex justify-center flex-col items-center h-full">
+          <div className="w-[90%] md:w-[90%] lg:w-[80%] flex justify-center items-start flex-col">
+            <h1 className="mb-5 text-4xl md:text-4xl  lg:text-5xl font-bold text-start ">
               {title}
             </h1>
-            <p className=" text-xl text-start w-full">
+            <p className=" mb-5 text-md md:text-lg  lg:text-2xl text-start w-full">
               {/* Online English classes to practice speaking together */}
               {description}
             </p>
           </div>
         </div>
         <div
-          className="w-1/2 h-full bg-cover bg-center"
+          className="lg:w-1/2 bg-cover bg-center w-full h-full hidden md:inline-block"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1546&q=80')",
