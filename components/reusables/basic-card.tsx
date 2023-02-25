@@ -3,9 +3,9 @@ import { useSpring, animated } from "@react-spring/web";
 import { useEffect, useState } from "react";
 import { Waypoint } from "react-waypoint";
 
-export default function BasicCard({course,idx}:any) {
+export default function BasicCard({ course, idx }: any) {
+  const [showText, setShowText] = useState(true);
   const [animationTrigger, setAnimationTrigger] = useState(false);
-  console.log(idx)
   const spring = useSpring({
     from: { opacity: 0, y: 100 },
     to: animationTrigger && { opacity: 1, y: 0 },
@@ -30,13 +30,24 @@ export default function BasicCard({course,idx}:any) {
         style={spring}
       >
         <figure>
-          <img src={course?.image} alt="Courses"  className=" bg-cover bg-center" />
+          <img
+            src={course?.image}
+            alt="Courses"
+            className=" bg-cover bg-center"
+          />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{course.language}</h2>
-          <p>{course?.description}</p>
+          <p
+            className={`${showText && "truncate"} hover:cursor-pointer`}
+            onClick={()=>setShowText(!showText)}
+          >
+            {course?.description}
+          </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary rounded-none">Start learning</button>
+            <button className="btn btn-primary rounded-none">
+              Start learning
+            </button>
           </div>
         </div>
       </animated.div>
