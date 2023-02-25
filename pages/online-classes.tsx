@@ -20,7 +20,7 @@ export async function getServerSideProps() {
   // Fetch data from external API
   try {
     const res = await fetch(`https://polydioms.online/api/courses`);
-    const courses: Courses = await res.json();
+    const courses: any = await res.json();
 
     // Pass data to the page via props
     // console.log(data);
