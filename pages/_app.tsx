@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/navbar.css"
 import Head from "next/head";
 import Navbar from "../components/reusables/navbar";
 // import "tailwindcss/tailwind.css";
