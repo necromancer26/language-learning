@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Waypoint } from "react-waypoint";
 
-export default function BasicCard({course={language:"",image:""}}) {
+export default function BasicCard({ course }: any) {
   const [animationTrigger, setAnimationTrigger] = useState(false);
   const spring = useSpring({
     from: { opacity: 0, y: 100 },
@@ -21,7 +21,24 @@ export default function BasicCard({course={language:"",image:""}}) {
 
   return (
     <Waypoint onEnter={() => setAnimationTrigger(true)}>
-      <animated.div
+      <animated.div className="card w-96 glass " style={spring}>
+        <figure>
+          {/* <img src={course?.img} alt="car!" /> */}
+          <img
+            src={course?.image}
+            alt="Courses"
+            className=" bg-cover bg-center"
+          />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">Life hack</h2>
+          <p>How to park your car at your garage?</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Learn now!</button>
+          </div>
+        </div>
+      </animated.div>
+      {/* <animated.div
         className={
           "card card-compact w-96 bg-base-100 shadow-xl rounded-none lg:my-0 my-5 ease-linear "
         }
@@ -37,7 +54,7 @@ export default function BasicCard({course={language:"",image:""}}) {
             <button className="btn btn-primary rounded-none">Start learning</button>
           </div>
         </div>
-      </animated.div>
+      </animated.div> */}
     </Waypoint>
   );
 }

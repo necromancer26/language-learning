@@ -1,20 +1,25 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import {useRouter} from 'next/router';
 import PolydiomsLogo from "../../public/assets/polydioms-logo.svg";
 export default function Navbar() {
+  const router=useRouter()
   const [navbarIsScrolled, setNavbarIsScrolled] = useState(true);
   const [dropdownIsClicked, setDropdownIsClicked] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 66) {
+    if (window.scrollY >= 66 ) {
       setNavbarIsScrolled(true);
-    } else {
+    } 
+
+    else {
       setNavbarIsScrolled(false);
     }
   };
 
   useEffect(() => {
     changeBackground();
+    console.log(router.pathname)
     // adding the event when scroll change background
     window.addEventListener("scroll", changeBackground);
     return () => {};

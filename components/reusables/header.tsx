@@ -1,15 +1,50 @@
+import { useEffect, useState } from "react";
+
 export default function Header({ title = "Header" }) {
+  const [blur, setBlur] = useState(10);
+  const changeBackground = () => {
+    if (window.scrollY >= 1) {
+      // setNavbarIsScrolled(true);
+      setBlur(blur+1);
+    } else {
+      // setNavbarIsScrolled(false);
+      setBlur(0);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    // console.log(blur);
+    window.addEventListener("scroll", changeBackground);
+    return () => {};
+  }, []);
+
   return (
-    <section className=" pt-20 lg:h-[50vh] bg-slate-900 flex justify-center items-center w-full">
-      <h1 className="mb-5  lg:w-full text-5xl font-bold text-slate-100 font-[playfairdisplay] relative  text-center">
-        {title}
-      </h1>
-      <p>
-        We offer a wide range of online language courses designed to help
-        learners of all levels achieve their language goals. Our courses are
-        designed and taught by experienced language instructors who are
-        passionate about helping students succeed.
-      </p>
+    <section className="pt-0 h-[30vh] lg:h-[50vh] font-[spectral] bg-slate-900 w-full flex ">
+      <div className=" text-slate-100 flex justify-center items-center w-full mx-auto">
+        <div className="w-1/2 ">
+          <h1 className="mb-5  text-5xl font-bold text-center w-full ">
+            {title}
+          </h1>
+
+
+        </div>
+        <div
+          className="w-1/2 h-full bg-cover bg-center"
+          style={{
+            backgroundImage:"url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1546&q=80')"
+          }}
+        >
+          <div
+            className={`h-full w-full backdrop-blur-[5px] from-[#2b2d42]`}
+          ></div>
+        </div>
+        {/* <p className="w-full">
+          {`We offer a wide range of online and in-person language courses designed to help learners
+           of all levels achieve their language goals. \n Our courses are designed and taught by
+            experienced language instructors who are passionate about
+             helping students succeed.`}
+        </p> */}
+      </div>
     </section>
   );
 }
