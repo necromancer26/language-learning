@@ -70,9 +70,9 @@ export default function Faqs() {
                   How does support work?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  We're aware of the importance of well qualified support, that
+                  {`We're aware of the importance of well qualified support, that
                   is why we decided that support will only be provided by the
-                  authors that actually worked on this project.
+                  authors that actually worked on this project.`}
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Feel free to{" "}
@@ -104,11 +104,11 @@ export default function Faqs() {
                   I want to build more than one project. Is that allowed?
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  You can use Windster for an unlimited amount of projects,
+                  {`You can use Windster for an unlimited amount of projects,
                   whether it's a personal website, a SaaS app, or a website for
                   a client. As long as you don't build a product that will
                   directly compete with Windster either as a UI kit, theme, or
-                  template, it's fine.
+                  template, it's fine.`}
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Find out more information by{" "}
@@ -137,19 +137,19 @@ export default function Faqs() {
                       clip-rule="evenodd"
                     ></path>
                   </svg>
-                  What does "free updates" include?
+                  {`What does "free updates" include?`}
                 </h3>
                 <p className="text-gray-500 dark:text-gray-400">
-                  The free updates that will be provided is based on the{" "}
+                  {"The free updates that will be provided is based on the "}
                   <a
                     href="#"
                     className="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
                   >
                     roadmap
-                  </a>{" "}
-                  that we have laid out for this project. It is also possible
+                  </a>
+                  {`that we have laid out for this project. It is also possible
                   that we will provide extra updates outside of the roadmap as
-                  well.
+                  well. `}
                 </p>
               </div>
               <div className="mb-10">
