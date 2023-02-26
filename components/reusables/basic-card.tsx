@@ -31,13 +31,13 @@ export default function BasicCard({ course, idx }: any) {
         style={spring}
       >
         <figure>
-          <Image
+          <img
             src={course?.image}
             alt="Courses"
             className=" bg-cover bg-center"
             // fill
-            width={400}
-            height={200}
+            // width={400}
+            // height={200}
           />
         </figure>
         <div className="card-body">
