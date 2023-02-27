@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import Calendar from 'react-calendar';
+// import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 
 export default function schedule() {
@@ -8,7 +8,7 @@ export default function schedule() {
     <div className="h-[100vh] bg-slate-300 flex flex-col justify-center items-center font-[Inter]">
       <h1>Schedule your appointement</h1>
       <div>
-      <Calendar/>
+      {/* <Calendar/> */}
 
       </div>
     </div>
