@@ -23,13 +23,13 @@ export default function AIComponent() {
           />
           <ServiceCard
             serviceImage={Translation}
-            title="Learning"
+            title="Translation"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lacus at facilisis commodo, quam velit blandit velit, vel tincidunt libero enim a ante."
           />
 
           <ServiceCard
             serviceImage={Workshop}
-            title="Learning"
+            title="Workshop"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lacus at facilisis commodo, quam velit blandit velit, vel tincidunt libero enim a ante."
           />
         </div>
