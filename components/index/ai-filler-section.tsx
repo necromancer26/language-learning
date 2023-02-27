@@ -10,7 +10,7 @@ const FillerSectionAI = () => {
           lacus at facilisis commodo, quam velit blandit velit, vel tincidunt
           libero enim a ante.
         </p>
-        <button className="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700">
+        <button className="bg-gray-800 text-white px-6 py-3 rounded-sm hover:bg-gray-700">
           Learn More
         </button>
       </div>

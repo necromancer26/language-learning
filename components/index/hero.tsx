@@ -43,28 +43,12 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-3xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-[spectral] relative "
+            className="mb-5 text-3xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-serif font-cursive relative font-DancingScript text-2xl font-cursive hero-title"
           >
-            <span>LANGUAGE BARRIER</span> <br />
-            <span className="font-[spectral]">
-              SHALL NOT <br /> HINDER <br /> YOUR SUCCESS
+            <span>Language Barrier</span> <br />
+            <span className="font-[Dancing Script]">
+              Shall not <br /> hinder <br /> your success
             </span>
-            {/* <TypeAnimation
-              sequence={[
-                "LANGUAGE BARRIER", // Types 'One'
-                3000, // Waits 1s
-                "SHALL NOT HINDER YOUR SUCCESS!", // Deletes 'One' and types 'Two'
-                3000, // Waits 2s
-                // () => {
-                //   console.log("Done typing!"); // Place optional callbacks anywhere in the array
-                // },
-              ]}
-              wrapper="div"
-              cursor={true}
-              repeat={Infinity}
-              style={{ fontSize: "1.1em" }}
-              speed={99}
-            /> */}
           </animated.h1>
           <animated.span className="text-gray-300 mb-5 " style={spring}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum

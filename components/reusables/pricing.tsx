@@ -65,7 +65,7 @@ const Pricing = () => {
           {courses.map((course, index) => (
             <div
               key={course.title}
-              className={`bg-white p-8 shadow-lg transition-all duration-300 ${
+              className={`bg-white py-8 px-4 shadow-lg transition-all duration-300 ${
                 selectedIndex === index ? "border-l-4 border-slate-500" : ""
               } hover:shadow-xl transform hover:-translate-y-1 cursor-pointer`}
               onClick={() => setSelectedIndex(index)}
@@ -78,7 +78,7 @@ const Pricing = () => {
               </h2>
               <ul className="list-disc list-inside">
                 {course.features.map((feature) => (
-                  <li key={feature} className="mb-2 ">
+                  <li key={feature} className="mb-2 text-sm ">
                     {feature}
                   </li>
                 ))}

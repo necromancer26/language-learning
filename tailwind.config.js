@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   daisyui: {
     themes: [
@@ -52,11 +53,11 @@ module.exports = {
       },
       animation: {
         "opacity-transition": "glass_opacity 0.5s ",
-        "infinite-opacity":"glass_opacity 20s infinite"
+        "infinite-opacity": "glass_opacity 20s infinite",
       },
       flexGrow: {
-        '1': 1,
-        '2': 2,
+        1: 1,
+        2: 2,
       },
     },
     container: {
@@ -85,5 +86,17 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [require("daisyui"), require("tailwindcss-filters"),require("tailwindcss-animation-delay"),],
+  plugins: [
+    require("daisyui"),
+    require("tailwindcss-filters"),
+    require("tailwindcss-animation-delay"),
+  ],
+  variants: {
+    extend: {
+      fontFamily: {
+        serif: ['"Dancing Script"', ...defaultTheme.fontFamily.serif],
+        cursive: ["Dancing Script","cursive"],
+      },
+    },
+  },
 };

@@ -22,8 +22,8 @@ export default function Header({
   }, []);
 
   return (
-    <section className="pt-0 h-full lg:h-[50vh] font-[spectral] bg-slate-200 md:bg-slate-200 lg:bg-slate-900 lg:text-slate-200 w-full flex">
-      <div className=" text-slate-900 md:text-slate-700 lg:text-slate-200 flex flex-col-reverse lg:flex-row justify-center items-center w-full my-20 lg:my-0">
+    <section className="pt-0 h-full lg:h-[50vh] font-[PlayFairDisplay] bg-slate-900 md:bg-slate-900 lg:bg-slate-900 lg:text-slate-200 w-full flex">
+      <div className=" text-slate-200 md:text-slate-200 lg:text-slate-200 flex flex-col-reverse lg:flex-row justify-center items-center w-full my-20 lg:my-0">
         <div className="w-full lg:w-1/2 flex justify-center flex-col items-center h-full">
           <div className="w-[90%] md:w-[90%] lg:w-[80%] flex justify-center items-start flex-col">
             <h1 className="mb-5 text-4xl md:text-4xl  lg:text-5xl font-bold text-start ">
