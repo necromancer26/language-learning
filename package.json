@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.12",
+    "@heroicons/react": "^2.0.16",
     "@next/font": "13.1.1",
     "@react-spring/parallax": "^9.6.1",
     "@react-spring/web": "^9.6.1",
@@ -23,6 +25,7 @@
     "next": "13.1.1",
     "postcss": "^8.4.20",
     "react": "18.2.0",
+    "react-calendar": "^4.0.0",
     "react-dom": "18.2.0",
     "react-type-animation": "^2.1.2",
     "react-waypoint": "^10.3.0",

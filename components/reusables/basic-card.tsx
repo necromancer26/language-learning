@@ -1,5 +1,6 @@
 import { useSpring, animated } from "@react-spring/web";
-import Image from "next/image";
+import Link from "next/link";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Waypoint } from "react-waypoint";
 
@@ -21,6 +22,7 @@ export default function BasicCard({ course, idx }: any) {
   useEffect(() => {
     return () => {};
   }, []);
+  const handleButton = () => {};
 
   return (
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={idx}>
@@ -50,9 +52,12 @@ export default function BasicCard({ course, idx }: any) {
             {course?.description}
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary rounded-none">
-              Start learning
-            </button>
+            <Link href="schedule">
+              {" "}
+              <button className="btn btn-primary rounded-none">
+                Start learning
+              </button>
+            </Link>
           </div>
         </div>
       </animated.div>
