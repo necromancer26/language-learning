@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-export default function Header({ title = "Header",description ="description"}:any) {
+export default function Header({
+  title = "Header",
+  description = "description",
+}: any) {
   const [blur, setBlur] = useState(10);
   const changeBackground = () => {
     if (window.scrollY >= 1) {

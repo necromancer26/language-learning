@@ -30,14 +30,10 @@ export default function Navbar() {
         className={`fixed z-50 ease-in m-0 flex items-center h-[10vh] justify-between flex-wrap  lg:h-auto   lg:p-6  w-full  
       ${
         navbarIsScrolled
-          ? " bg-slate-100/[0.5] backdrop-blur-md text-slate-900"
-          : "bg-transparent text-slate-200 transition-all"
+          ? " bg-slate-100/[0.5] backdrop-blur-md lg:text-slate-900"
+          : "bg-transparent lg:text-slate-200 transition-all"
+      }
 
-      }
-      ${
-        dropdownIsClicked && "backdrop-blur-md"
-        // dropdownIsClicked && !navbarIsScrolled && " bg-slate-100/[0.5] backdrop-blur-md"
-      }
       `}
       >
         <div className="flex items-center flex-shrink-0 text-white mr-6">
@@ -57,7 +53,7 @@ export default function Navbar() {
         </div>
         <div className="block lg:hidden">
           <button
-            className="flex items-center px-3 mr-10  lg:mr-0 py-2 border rounded text-slate-200 border-slate-200 hover:text-slate-200 hover:border-white"
+            className="flex items-center px-3 mr-10  lg:mr-0 py-2 border rounded text-slate-200 border-slate-200 hover:text-slate-200 hover:border-slate-200"
             onClick={() => {
               console.log("clicked");
               setDropdownIsClicked(!dropdownIsClicked);
@@ -74,20 +70,21 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className={`w-full absolute lg:relative top-0 opacity-0 lg:opacity-100 left-[-100%] ${
+          className={`w-full absolute lg:relative top-0 opacity-0 lg:opacity-100 left-[-100%]   ${
             dropdownIsClicked && "left-[0] opacity-100"
           } lg:flex-grow lg:flex lg:items-center lg:w-auto lg:left-0 lg:bg-transparent
-           justify-center h-[90vh] lg:h-auto mt-[10vh] lg:mt-0 transition-all duration-500 `}
+           justify-center h-[90vh] lg:h-auto mt-[10vh] lg:mt-0 transition-all duration-500 bg-slate-100`}
         >
           <div
             className={
-              "text-sm lg:flex-grow flex-col lg:flex-row w-full lg:justify-start justify-start h-full items-center flex "
+              " lg:pl-0 text-sm h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center"
             }
           >
             <Link
               className={
-                "block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                "block pl-4 py-4 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-900 w-full lg:w-auto lg:hover:bg-transparent lg:w-auto lg:hover:bg-transparent"
               }
+              onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
               href={"/"}
             >
               Home
@@ -95,8 +92,9 @@ export default function Navbar() {
             <Link
               href="online-classes"
               className={
-                "block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                "block pl-4 py-4 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-900 w-full lg:w-auto lg:hover:bg-transparent"
               }
+              onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
             >
               Online Classes
             </Link>
@@ -104,23 +102,26 @@ export default function Navbar() {
             <Link
               href="about-us"
               className={
-                "block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                "block pl-4 py-4 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-900 w-full lg:w-auto lg:hover:bg-transparent"
               }
+              onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
             >
               About Us
             </Link>
             <Link
               className={
-                "block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                "block pl-4 py-4 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-900 w-full lg:w-auto lg:hover:bg-transparent"
               }
+              onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
               href="faqs"
             >
               FAQs
             </Link>
             <Link
               className={
-                "block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4"
+                "block pl-4 py-4 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-900 w-full lg:w-auto lg:hover:bg-transparent"
               }
+              onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
               href="contact"
             >
               Contact

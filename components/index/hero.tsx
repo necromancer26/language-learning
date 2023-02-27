@@ -34,14 +34,16 @@ export default function Hero() {
         backgroundImage: "url('/assets/hero.jpg')",
       }}
     >
-      <div className={`hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}>
+      <div
+        className={`hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
+      >
         <animated.div
           className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out"
           style={curtain}
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-4xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-[spectral] relative "
+            className="mb-5 text-3xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-[spectral] relative "
           >
             <span>LANGUAGE BARRIER</span> <br />
             <span className="font-[spectral]">
@@ -64,11 +66,9 @@ export default function Hero() {
               speed={99}
             /> */}
           </animated.h1>
-          <animated.span className="text-gray-300 mb-5  " style={spring}>
+          <animated.span className="text-gray-300 mb-5 " style={spring}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum
             delectus, velit eligendi similique eius cum temporibus voluptatum
-            officia minima eos aperiam amet iste atque mollitia animi ipsa quam
-            earum?
           </animated.span>
           <animated.a
             className="btn ease-linear bg-teal-500 hover:bg-slate-600 glass"

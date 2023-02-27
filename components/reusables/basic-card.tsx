@@ -26,25 +26,26 @@ export default function BasicCard({ course, idx }: any) {
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={idx}>
       <animated.div
         className={
-          "card card-compact w-96 bg-base-100 shadow-xl rounded-none lg:my-0 my-5 ease-linear "
+          "card card-compact w-80 sm:w-80 xmd:w-80 lg:w-96 bg-base-100 shadow-xl rounded-none lg:my-0 my-5 ease-linear "
         }
         style={spring}
       >
         <figure>
-          <img
-            src={course?.image}
-            alt="Courses"
-            className=" bg-cover bg-center"
-            // fill
-            // width={400}
-            // height={200}
-          />
+          <picture>
+            <img
+              src={course?.image}
+              alt="Courses"
+              className=" bg-cover bg-center"
+              width={800}
+              height={500}
+            />
+          </picture>
         </figure>
         <div className="card-body">
           <h2 className="card-title">{course.language}</h2>
           <p
             className={`${showText && "truncate"} hover:cursor-pointer`}
-            onClick={()=>setShowText(!showText)}
+            onClick={() => setShowText(!showText)}
           >
             {course?.description}
           </p>
