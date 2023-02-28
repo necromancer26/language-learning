@@ -2,7 +2,7 @@ import React from "react";
 import Testimonial from "./testimonial";
 export default function TestimonialsContainer() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-slate-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm">
           <svg
@@ -42,14 +42,14 @@ export default function TestimonialsContainer() {
           />
           <Testimonial title="CTO at Google" name="Joseph McFall" bg="300" />
         </div>
-        <div className="text-center">
+        {/* <div className="text-center">
           <a
             href="#"
             className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             Show more...
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

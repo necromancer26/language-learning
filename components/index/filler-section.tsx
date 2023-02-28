@@ -29,27 +29,25 @@ export default function FillerSection() {
       mass: 5,
       friction: 120,
       tension: 120,
-      
     },
   });
   const opacity = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     delay: 1300,
-    loop:true,
+    loop: true,
     config: {
       duration: 2500,
       mass: 5,
       friction: 120,
       tension: 120,
-      
     },
   });
   return (
     <div className="lg:h-[100vh] bg-slate-100 flex flex-col md:flex-col lg:flex-row sm:flex-col lg:py-0 snap-center">
       <Waypoint onEnter={() => setTriggerText(true)}>
-        {triggerText && (
-          <div className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5 p-10 text-slate-600">
+        <div className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5 p-10 text-slate-600">
+          {triggerText && (
             <animated.div style={spring} className="">
               <TiteDescription
                 title="Learn with your preferred language"
@@ -63,8 +61,8 @@ export default function FillerSection() {
                 sapiente recusandae pariatur perspiciatis?"
               />
             </animated.div>
-          </div>
-        )}
+          )}
+        </div>
       </Waypoint>
       <Waypoint onEnter={() => setTriggerPicture(true)}>
         {triggerPicture && (

@@ -6,7 +6,7 @@ import FillerSection from "../components/index/filler-section";
 // import Values from "../components/index/values";
 import TestimonialsContainer from "../components/index/testimonials-container";
 import FillerSectionAI from "../components/index/ai-filler-section";
-import AIComponent from "../components/index/ai-component";
+import Services from "../components/index/services";
 import AnimatedPricing from "../components/reusables/pricing";
 import Faqs from "../components/index/faqs";
 
@@ -28,7 +28,7 @@ export default function Home() {
       {/* <Values /> */}
       <AnimatedPricing />
       <FillerSectionAI />
-      <AIComponent />
+      <Services />
       <TestimonialsContainer />
       <Faqs />
     </>

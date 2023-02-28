@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Testimonial({
@@ -7,7 +8,7 @@ export default function Testimonial({
 }) {
   return (
     <figure
-      className={`flex flex-col justify-center items-center p-8 text-center border-none md:p-12 lg:border-r dark:bg-gray-800 dark:border-gray-700 bg-slate-${bg}   `}
+      className={`flex flex-col justify-center items-center p-8 text-center border-none md:p-12 lg:border-r dark:bg-slate-800 dark:border-slate-700 bg-slate-${bg}   `}
     >
       <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -21,10 +22,12 @@ export default function Testimonial({
         </p>
       </blockquote>
       <figcaption className="flex justify-center items-center space-x-3">
-        <img
+        <Image
           className="w-9 h-9 rounded-full"
           src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
           alt="profile picture"
+          width={10}
+          height={10}
         />
         <div className="space-y-0.5 font-medium dark:text-white text-left">
           <div>{name}</div>

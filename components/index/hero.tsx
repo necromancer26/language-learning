@@ -43,7 +43,7 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-2xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
+            className="mb-5 text-2xl lg:text-5xl lg:w-full md:text-5xl font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
           >
             <span>Language Barrier</span> <br />
             <span className="font-[Dancing Script]">
