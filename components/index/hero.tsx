@@ -43,16 +43,20 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-3xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-serif font-cursive relative font-DancingScript text-2xl font-cursive hero-title"
+            className="mb-5 text-2xl lg:text-5xl lg:w-full md:text-4xl font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
           >
             <span>Language Barrier</span> <br />
             <span className="font-[Dancing Script]">
-              Shall not <br /> hinder <br /> your success
+              Shall not <br /> Hinder <br />{" "}
+              <span className="animated-text">Your Success</span>
             </span>
           </animated.h1>
-          <animated.span className="text-gray-300 mb-5 " style={spring}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex harum
-            delectus, velit eligendi similique eius cum temporibus voluptatum
+          <animated.span
+            className="text-gray-300 mb-5 font-[Inter]"
+            style={spring}
+          >
+            Find inspiration and actionable tips to overcome language barriers
+            and achieve your goals today.
           </animated.span>
           <animated.a
             className="btn ease-linear bg-teal-500 hover:bg-slate-600 glass"

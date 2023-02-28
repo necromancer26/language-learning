@@ -1,15 +1,18 @@
 # Specify a base image
 FROM node:18-slim as node
+RUN npm install -g yarn
 FROM ubuntu:focal-20230126 as base
 
 # Set the working directory
 WORKDIR /app
 
 # Copy app files
-COPY . .
-
+# COPY . .
+# Copy app files
+COPY --from=node /usr/local/bin/yarn /usr/local/bin/yarn
+COPY --from=node /usr/local/bin/yarnpkg /usr/local/bin/yarnpkg
 # Install dependencies
-RUN yarn
+RUN yarn Install --production
 
 # Build Next.js app
 RUN yarn build

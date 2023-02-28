@@ -22,7 +22,6 @@ export default function BasicCard({ course, idx }: any) {
   useEffect(() => {
     return () => {};
   }, []);
-  const handleButton = () => {};
 
   return (
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={idx}>

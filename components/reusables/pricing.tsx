@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import { useSpring, animated } from "@react-spring/web";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
+import PricingCard from "./pricing-card";
 
 const Pricing = () => {
+  const [animationTrigger, setAnimationTrigger] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const courses = [
@@ -63,27 +67,18 @@ const Pricing = () => {
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
         <div className="grid grid-cols-1 md:grid-col-1 lg:grid-cols-5 gap-5">
           {courses.map((course, index) => (
-            <div
-              key={course.title}
-              className={`bg-white py-8 px-4 shadow-lg transition-all duration-300 ${
-                selectedIndex === index ? "border-l-4 border-slate-500" : ""
-              } hover:shadow-xl transform hover:-translate-y-1 cursor-pointer`}
-              onClick={() => setSelectedIndex(index)}
-            >
-              <h3 className="text-xl font-medium text-gray-800 mb-4">
-                {course.title}
-              </h3>
-              <h2 className="text-5xl lg:text-4xl md:text-3xl font-medium text-gray-800 mb-4">
-                {course.price}
-              </h2>
-              <ul className="list-disc list-inside">
-                {course.features.map((feature) => (
-                  <li key={feature} className="mb-2 text-sm ">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <Waypoint onEnter={() => setAnimationTrigger(true)} key={index}>
+              <div>
+                {" "}
+                <PricingCard
+                  index={index}
+                  course={course}
+                  animationTrigger={animationTrigger}
+                  selectedIndex={selectedIndex}
+                  setSelectedIndex={setSelectedIndex}
+                />
+              </div>
+            </Waypoint>
           ))}
         </div>
       </div>
