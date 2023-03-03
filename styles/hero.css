@@ -1,0 +1,45 @@
+/* @media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .hero-responsive::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg)
+      no-repeat center center;
+    box-shadow: inset 0 0 0 1000px rgba(43, 45, 66, 0.5);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(7px);
+  }
+} */
+@media (max-width: 1024px) {
+  .hero-responsive::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg)
+      no-repeat center center;
+    /* box-shadow: inset 0 0 0 1000px rgba(43, 45, 66, 0.3); */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(7px);
+  }
+}

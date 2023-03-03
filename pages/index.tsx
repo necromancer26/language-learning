@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 export default function Home() {
   return (
-    <>
+    <div className="bg-transparent">
       <Hero />
       <FillerSection />
       <OtherServicesSection />
@@ -29,6 +29,6 @@ export default function Home() {
 
       <Faqs />
       <FillerSectionAI />
-    </>
+    </div>
   );
 }

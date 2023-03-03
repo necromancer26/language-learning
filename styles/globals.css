@@ -6,6 +6,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.hero-responsive {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .animated-text {
   background: radial-gradient(
@@ -69,25 +72,6 @@
     width: 0%;
     /* transition: width .3s; */
   }
-  .hero-responsive::before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg)
-      no-repeat center center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(7px);
-  }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -104,25 +88,6 @@
     width: 0%;
     /* transition: width .3s; */
   }
-  .hero-responsive::before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg)
-      no-repeat center center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(7px);
-  }
 }
 
 @media all and (max-width: 480px) {
@@ -138,25 +103,6 @@
   .cool-link:hover::after {
     width: 0%;
     /* transition: width .3s; */
-  }
-  .hero-responsive::before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg)
-      no-repeat center center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(7px);
   }
 }
 

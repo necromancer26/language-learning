@@ -27,24 +27,19 @@ export default function Hero() {
     from: { opacity: 0, y: 10 },
     to: { opacity: 1, y: 0 },
   });
+  // lg:bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]
   return (
-    <div
-      className="bg-cover bg-center lg:bg-fixed snap-center hero-responsive"
-      style={{
-        backgroundImage:
-          "url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fasian-country.jpg')",
-      }}
-    >
+    <div className="lg:bg-cover lg:bg-center lg:bg-fixed snap-center  bg-transparent lg:bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]">
       <div
-        className={`hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
+        className={`hero min-h-screen hero-responsive bg-gradient-to-r from-[#2b2d42] flex lg:backdrop-blur-[5px] bg-transparent`}
       >
         <animated.div
-          className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out"
+          className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out bg-transparent"
           style={curtain}
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-4xl md:text-6xl lg:w-full font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
+            className=" bg-transparent mb-5 text-4xl md:text-6xl lg:w-full font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
           >
             <span>Language Barrier</span> <br />
             <span className="font-[Dancing Script]">
@@ -66,7 +61,7 @@ export default function Hero() {
             Explore our services
           </animated.a>
         </animated.div>
-        <div className="w-1/2 h-[100vh]"></div>
+        <div className="lg:w-1/2 h-[100vh] bg-transparent"></div>
       </div>
     </div>
   );
