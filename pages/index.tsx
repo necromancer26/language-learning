@@ -9,7 +9,6 @@ import FillerSectionAI from "../components/index/ai-filler-section";
 import Services from "../components/index/services";
 import AnimatedPricing from "../components/reusables/pricing";
 import Faqs from "../components/index/faqs";
-
 // import ParallaxComponent from "../components/index/parallax-effect";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,13 +23,12 @@ export default function Home() {
       <Hero />
       <FillerSection />
       <OtherServicesSection />
-      {/* <ServicesSection /> */}
-      {/* <Values /> */}
-      <AnimatedPricing />
-      <FillerSectionAI />
       <Services />
+      <AnimatedPricing />
       <TestimonialsContainer />
+
       <Faqs />
+      <FillerSectionAI />
     </>
   );
 }

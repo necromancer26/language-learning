@@ -9,9 +9,20 @@ export default function TiteDescription({
       <h1 className="mb-5 text-5xl font-bold  font-[spectral]  transition-all">
         {title || "Lorem ipsum dolor"}
       </h1>
-      <span className="mb-5 text-m font-bold  font-[spectral]  transition-all">
-        {description}
-      </span>
+      <div className=" grid grid-cols-1 gap-6 my-6 md:grid-cols-2 ">
+        <span className="mb-5 text-m font-bold  font-[spectral]  transition-all">
+          {description}
+        </span>
+        <span className="mb-5 text-m font-bold  font-[spectral]  transition-all">
+          {description}
+        </span>
+        <span className="mb-5 text-m font-bold  font-[spectral]  transition-all">
+          {description}
+        </span>
+        <span className="mb-5 text-m font-bold  font-[spectral]  transition-all">
+          {description}
+        </span>
+      </div>
     </div>
   );
 }

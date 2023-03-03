@@ -9,10 +9,6 @@ export default function CoursesList({ courses }: any) {
       {courses?.map((course: any, idx: number) => (
         <BasicCard course={course} key={idx} idx={idx} />
       ))}
-      {/* <BasicCard />
-      <BasicCard />
-      <BasicCard />
-      <BasicCard /> */}
     </div>
   );
 }

@@ -30,11 +30,7 @@ export default function OtherServicesSection() {
                   title="Do more with Polydioms!"
                   description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere
                 autem aliquam totam excepturi eius sapiente quisquam consectetur
-                numquam. Rerum, veniam! Provident commodi magnam veritatis nesciunt
-                cumque, alias obcaecati quis! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Hic dolor ut alias qui doloribus impedit
-                modi id tenetur quia non! Repudiandae sint minus ut accusamus odio
-                sapiente recusandae pariatur perspiciatis?"
+                numquam. Rerum, veniam! "
                 />
               </animated.div>
             )}

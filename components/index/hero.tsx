@@ -29,9 +29,10 @@ export default function Hero() {
   });
   return (
     <div
-      className="bg-cover bg-center lg:bg-fixed snap-center"
+      className="bg-cover bg-center lg:bg-fixed snap-center hero-responsive"
       style={{
-        backgroundImage: "url('/assets/hero.jpg')",
+        backgroundImage:
+          "url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fasian-country.jpg')",
       }}
     >
       <div
@@ -43,7 +44,7 @@ export default function Hero() {
         >
           <animated.h1
             style={spring}
-            className="mb-5 text-2xl lg:text-5xl lg:w-full md:text-5xl font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
+            className="mb-5 text-4xl md:text-6xl lg:w-full font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
           >
             <span>Language Barrier</span> <br />
             <span className="font-[Dancing Script]">

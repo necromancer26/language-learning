@@ -1,10 +1,7 @@
-import { useSpring, animated } from "@react-spring/web";
-import { useState } from "react";
-import { Waypoint } from "react-waypoint";
 import PricingCard from "./pricing-card";
+import { useState } from "react";
 
 const Pricing = () => {
-  const [animationTrigger, setAnimationTrigger] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const courses = [
@@ -62,23 +59,18 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-12">
+    <section className=" py-12 bg-slate-200">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
         <div className="grid grid-cols-1 md:grid-col-1 lg:grid-cols-5 gap-5">
           {courses.map((course, index) => (
-            <Waypoint onEnter={() => setAnimationTrigger(true)} key={index}>
-              <div>
-                {" "}
-                <PricingCard
-                  index={index}
-                  course={course}
-                  animationTrigger={animationTrigger}
-                  selectedIndex={selectedIndex}
-                  setSelectedIndex={setSelectedIndex}
-                />
-              </div>
-            </Waypoint>
+            <PricingCard
+              index={index}
+              course={course}
+              selectedIndex={selectedIndex}
+              setSelectedIndex={setSelectedIndex}
+              key={index}
+            />
           ))}
         </div>
       </div>

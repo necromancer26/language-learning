@@ -1,11 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import PolydiomsLogo from "../../public/assets/polydioms-logo.svg";
 
 export default function Navbar() {
-  const router = useRouter();
   const [navbarIsScrolled, setNavbarIsScrolled] = useState(true);
   const [dropdownIsClicked, setDropdownIsClicked] = useState(false);
   const changeBackground = () => {
@@ -41,8 +38,8 @@ export default function Navbar() {
             <Image
               src={
                 navbarIsScrolled
-                  ? PolydiomsLogo
-                  : "https://polydioms.com/wp-content/uploads/2022/07/Asset-3_white.svg"
+                  ? "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-black.svg"
+                  : "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
               }
               alt="Logo Polydioms"
               width={100}
@@ -73,9 +70,9 @@ export default function Navbar() {
           className={`w-full absolute lg:relative top-0 opacity-0 lg:opacity-100 left-[-100%]   ${
             dropdownIsClicked && "left-[0] opacity-100"
           } lg:flex-grow lg:flex lg:items-center lg:w-auto lg:left-0 lg:bg-transparent
-           justify-center h-[90vh] lg:h-auto mt-[10vh] lg:mt-0 transition-all duration-500 bg-slate-100`}
+           justify-center h-[90vh] lg:h-auto mt-[10vh] lg:mt-0 transition-all duration-500 bg-slate-900`}
         >
-          <div className="block transition-all ease-linear lg:pl-0 text-sm h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center">
+          <div className="block transition-all ease-linear lg:pl-0 text-sm text-white h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center">
             <Link
               className="cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               onClick={() => setDropdownIsClicked(!dropdownIsClicked)}

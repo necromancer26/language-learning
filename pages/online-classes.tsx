@@ -5,8 +5,9 @@ import Courses from "../interfaces/Courses";
 export default function OnlineClasses({ courses }: any) {
   return (
     <>
-      <Header title="Online classes to learn your preferred language" 
-      description="Learn the language you want with the guidance of our expert tutors"
+      <Header
+        title="Online classes to learn your preferred language"
+        description="Learn the language you want with the guidance of our expert tutors"
       />
       <div className=" bg-slate-100 w-full flex flex-col justify-center items-center gap-6 pt-6 font-[playfairdisplay] "></div>
 
@@ -21,10 +22,6 @@ export async function getServerSideProps() {
   try {
     const res = await fetch(`https://polydioms.online/api/courses`);
     const courses: any = await res.json();
-
-    // Pass data to the page via props
-    // console.log(data);
-
     return { props: { courses } };
   } catch (err) {
     console.error(err);
