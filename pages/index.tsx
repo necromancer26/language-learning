@@ -5,7 +5,7 @@ import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
 // import Values from "../components/index/values";
 import TestimonialsContainer from "../components/index/testimonials-container";
-import FillerSectionAI from "../components/index/ai-filler-section";
+import EndingSection from "../components/index/ai-filler-section";
 import Services from "../components/index/services";
 import AnimatedPricing from "../components/reusables/pricing";
 import Faqs from "../components/index/faqs";
@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 export default function Home() {
   return (
-    <div className="bg-transparent">
+    <div>
       <Hero />
       <FillerSection />
       <OtherServicesSection />
@@ -27,7 +27,7 @@ export default function Home() {
       <AnimatedPricing />
       <TestimonialsContainer />
       <Faqs />
-      <FillerSectionAI />
+      <EndingSection />
     </div>
   );
 }

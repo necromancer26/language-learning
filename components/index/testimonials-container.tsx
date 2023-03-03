@@ -1,29 +1,65 @@
 import React from "react";
 import Testimonial from "./testimonial";
+import { useSpring, animated } from "@react-spring/web";
+import { Waypoint } from "react-waypoint";
+import { useState } from "react";
 export default function TestimonialsContainer() {
+  const [triggerTitle, setTriggerTitle] = useState(false);
+  const opacityAnimation = useSpring({
+    from: { opacity: 0 },
+    to: triggerTitle && { opacity: 1 },
+    delay: 1000,
+    config: {
+      duration: 1000,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+  });
+  const delayedAnimation = {
+    from: { opacity: 0 },
+    to: triggerTitle && { opacity: 1 },
+    delay: 1500,
+    config: {
+      duration: 1000,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+  };
   return (
-    <section className="bg-white dark:bg-slate-900">
+    <section className="bg-slate-50 dark:bg-slate-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-        <div className="mx-auto max-w-screen-sm">
-          <svg
-            className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
-            viewBox="0 0 24 27"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
-              fill="currentColor"
-            />
-          </svg>{" "}
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Testimonials
-          </h2>
-          <p className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and
-            elements built with the utility classNamees from Tailwind
-          </p>
-        </div>
+        <Waypoint onEnter={() => setTriggerTitle(true)}>
+          <div>
+            <animated.div
+              className="mx-auto max-w-screen-sm"
+              style={opacityAnimation}
+            >
+              <svg
+                className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                viewBox="0 0 24 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                  fill="currentColor"
+                />
+              </svg>{" "}
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                Testimonials
+              </h2>
+            </animated.div>
+            <animated.p
+              className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
+              style={useSpring(delayedAnimation)}
+            >
+              Explore the whole collection of open-source web components and
+              elements built with the utility classNamees from Tailwind
+            </animated.p>
+          </div>
+        </Waypoint>
         <div className="grid mb-8 lg:mb-12 lg:grid-cols-2">
           <Testimonial
             title="Developer at Open AI"

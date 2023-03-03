@@ -127,34 +127,6 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div>
-        <div className="flex flex-col lg:flex-row h-[100vh] justify-center items-center text-slate-50">
-          <div className="h-[400px] w-[400px] bg-slate-400 m-10">
-            <TiteDescription
-              title="Title 1"
-              description="Reiciendis harum distinctio quidem sint laboriosam, obcaecati
-            officiis fugiat."
-            />
-            <a href="#" className="btn">
-              Learn More
-            </a>
-          </div>
-          <div className="h-[400px] w-[400px] bg-slate-600 m-10">
-            <TiteDescription
-              title="Title 1"
-              description="Reiciendis harum distinctio quidem sint laboriosam, obcaecati
-            officiis fugiat."
-            />
-          </div>
-          <div className="h-[400px] w-[400px] bg-slate-800 m-10">
-            <TiteDescription
-              title="Title 1"
-              description="Reiciendis harum distinctio quidem sint laboriosam, obcaecati
-            officiis fugiat."
-            />
-          </div>
-        </div>
-      </div>
     </>
   );
 }

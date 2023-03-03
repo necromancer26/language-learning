@@ -28,7 +28,7 @@ export default function Navbar() {
       ${
         navbarIsScrolled
           ? " bg-slate-200/[0.5] backdrop-blur-md lg:text-slate-900"
-          : "bg-transparent lg:text-slate-200 transition-all"
+          : "bg-transparent lg:text-slate-100 transition-all"
       }
 
       `}
@@ -72,7 +72,7 @@ export default function Navbar() {
           } lg:flex-grow lg:flex lg:items-center lg:w-auto lg:left-0 lg:bg-transparent
            justify-center h-[90vh] lg:h-auto mt-[10vh] lg:mt-0 transition-all duration-500 bg-slate-200`}
         >
-          <div className="block transition-all ease-linear lg:pl-0 text-sm text-slate-900 h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center">
+          <div className="block transition-all ease-linear lg:pl-0 text-sm h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center">
             <Link
               className="cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
