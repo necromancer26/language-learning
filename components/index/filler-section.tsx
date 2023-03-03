@@ -21,7 +21,7 @@ export default function FillerSection() {
     },
   });
   return (
-    <div className=" bg-slate-100 lg:py-0 snap-center h-[800px]">
+    <div className="lg:py-0 snap-center lg:h-[100vh] bg-slate-300">
       <div className="flex flex-col md:flex-col lg:flex-row sm:flex-col h-full w-[95%]  mx-auto">
         <Waypoint onEnter={() => setTriggerText(true)}>
           <div className="flex justify-center items-center flex-col lg:w-1/2 w-full 2xl:px-5 p-10 text-slate-600">

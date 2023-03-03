@@ -28,7 +28,7 @@ export default function TestimonialsContainer() {
     },
   };
   return (
-    <section className="bg-slate-50 dark:bg-slate-900">
+    <section className="bg-white dark:bg-slate-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <Waypoint onEnter={() => setTriggerTitle(true)}>
           <div>
@@ -37,7 +37,7 @@ export default function TestimonialsContainer() {
               style={opacityAnimation}
             >
               <svg
-                className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                className="h-12 mx-auto mb-3 text-gray-400 dark:text-slate-600"
                 viewBox="0 0 24 27"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export default function TestimonialsContainer() {
               </h2>
             </animated.div>
             <animated.p
-              className="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
+              className="mb-8 font-light text-gray-900 lg:mb-16 sm:text-xl dark:text-gray-400"
               style={useSpring(delayedAnimation)}
             >
               Explore the whole collection of open-source web components and
