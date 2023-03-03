@@ -31,6 +31,12 @@ module.exports = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "polydioms.fra1.cdn.digitaloceanspaces.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

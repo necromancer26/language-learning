@@ -12,7 +12,7 @@ export default function FillerSection() {
   const spring = useSpring({
     from: { opacity: 0, x: -30 },
     to: triggerText && { opacity: 1, x: 0 },
-    delay: 1000,
+    // delay: 1000,
     config: {
       duration: 1000,
       mass: 5,
@@ -20,21 +20,8 @@ export default function FillerSection() {
       tension: 120,
     },
   });
-
-  const opacity = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 },
-    delay: 1300,
-    loop: true,
-    config: {
-      duration: 2500,
-      mass: 5,
-      friction: 120,
-      tension: 120,
-    },
-  });
   return (
-    <div className=" bg-slate-100 lg:py-0 snap-center lg:h-[90vh]">
+    <div className=" bg-slate-100 lg:py-0 snap-center h-[800px]">
       <div className="flex flex-col md:flex-col lg:flex-row sm:flex-col h-full w-[95%]  mx-auto">
         <Waypoint onEnter={() => setTriggerText(true)}>
           <div className="flex justify-center items-center flex-col lg:w-1/2 w-full 2xl:px-5 p-10 text-slate-600">

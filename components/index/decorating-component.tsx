@@ -7,7 +7,6 @@ export default function DecoratingComponent() {
   const pic = useSpring({
     from: { opacity: 0, x: -30 },
     to: triggerPicture && { opacity: 1, x: 0 },
-    delay: 1500,
     config: {
       duration: 1000,
       mass: 5,

@@ -8,7 +8,6 @@ export default function OtherServicesSection() {
   const spring = useSpring({
     from: { opacity: 0, x: 30 },
     to: trigger && { opacity: 1, x: 0 },
-    delay: 1000,
     config: {
       duration: 1000,
       mass: 5,
@@ -17,7 +16,7 @@ export default function OtherServicesSection() {
     },
   });
   return (
-    <div className="lg:h-[90vh] snap-center z-10 w-full bg-slate-900">
+    <div className="snap-center z-10 w-full bg-slate-900">
       <div className=" h-full mx-auto w-[95%] flex flex-col-reverse lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex justify-center items-center lg:w-1/2 w-full h-[700px]">
           <DecoratingComponent />

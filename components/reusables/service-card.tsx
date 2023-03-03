@@ -9,7 +9,7 @@ export default function ServiceCard({ service, index = 0 }: any) {
     from: { opacity: 0, y: 100 },
     to: animationTrigger && { opacity: 1, y: 0 },
     config: {
-      duration: 300,
+      duration: 500,
       mass: 5,
       friction: 120,
       tension: 120,
@@ -19,8 +19,8 @@ export default function ServiceCard({ service, index = 0 }: any) {
   return (
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={index}>
       <div>
-        <animated.div className="w-full  px-2 mb-4" style={spring}>
-          <div className="bg-white p-6 rounded-md shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+        <animated.div className="w-full mb-4" style={spring}>
+          <div className="bg-slate-50 p-6 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
             <div className="flex my-5 ">
               <Image
                 // fill
@@ -30,11 +30,11 @@ export default function ServiceCard({ service, index = 0 }: any) {
                 height={40}
                 className=""
               />
-              <h3 className="text-lg font-medium text-gray-800 mb-4 ml-4">
+              <h3 className="text-lg font-medium text-slate-900 mb-4 ml-4">
                 {service?.title}
               </h3>
             </div>
-            <p className="text-gray-600">{service?.description}</p>
+            <p className="text-slate-500 text-sm">{service?.description}</p>
           </div>
         </animated.div>
       </div>

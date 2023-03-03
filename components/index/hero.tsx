@@ -29,9 +29,9 @@ export default function Hero() {
   });
   // lg:bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]
   return (
-    <div className="bg-cover bg-center bg-fixed snap-center  bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]">
+    <div className="bg-cover bg-center lg:bg-fixed snap-center  bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]">
       <div
-        className={`hero min-h-screen bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
+        className={`hero min-h-[100vh] bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
       >
         <animated.div
           className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out bg-transparent"

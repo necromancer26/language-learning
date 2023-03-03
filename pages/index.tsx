@@ -5,7 +5,7 @@ import OtherServicesSection from "../components/index/other-services-section";
 import FillerSection from "../components/index/filler-section";
 // import Values from "../components/index/values";
 import TestimonialsContainer from "../components/index/testimonials-container";
-import EndingSection from "../components/index/ai-filler-section";
+import EndingSection from "../components/index/bottom-section";
 import Services from "../components/index/services";
 import AnimatedPricing from "../components/reusables/pricing";
 import Faqs from "../components/index/faqs";
@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <Services />
       <FillerSection />
       <OtherServicesSection />
-      <Services />
       <AnimatedPricing />
       <TestimonialsContainer />
       <Faqs />

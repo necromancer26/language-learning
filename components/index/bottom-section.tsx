@@ -9,7 +9,7 @@ const FillerSectionAI = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
         </p>
         <button className="bg-slate-900 btn text-white px-6 py-3 hover:bg-slate-700">
-          Learn More
+          Create an account
         </button>
       </div>
       <div className="lg:w-2/3 bg-bottom bg-cover bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fdesk-workspace.avif')]">
