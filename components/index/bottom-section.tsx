@@ -1,4 +1,18 @@
+import { animated, useSpring } from "@react-spring/web";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
 const FillerSectionAI = () => {
+  const [trigger, setTrigger] = useState(false);
+  const spring = useSpring({
+    from: { opacity: 0, x: 30 },
+    to: trigger && { opacity: 1, x: 0 },
+    config: {
+      duration: 1000,
+      mass: 5,
+      friction: 120,
+      tension: 120,
+    },
+  });
   return (
     <section className="bg-slate-300 flex">
       <div className="container text-start lg:w-1/3 my-12">
@@ -12,8 +26,15 @@ const FillerSectionAI = () => {
           Create an account
         </button>
       </div>
-      <div className="lg:w-2/3 bg-bottom bg-cover bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fdesk-workspace.avif')]">
-        <div className="bg-gradient-to-r from-slate-300 flex  bg-transparent h-full" />
+      <div className="lg:w-2/3">
+        <Waypoint onEnter={() => setTrigger(true)}>
+          <animated.div
+            style={spring}
+            className="w-full h-full bg-bottom bg-cover bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fdesk-workspace.avif')]"
+          >
+            <div className="bg-gradient-to-r from-slate-300 flex  bg-transparent h-full" />
+          </animated.div>
+        </Waypoint>
       </div>
     </section>
   );

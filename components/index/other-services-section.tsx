@@ -16,13 +16,13 @@ export default function OtherServicesSection() {
     },
   });
   return (
-    <div className="snap-center z-10 w-full bg-slate-900">
-      <div className=" min-h-[800px] mx-auto w-[95%] flex flex-col-reverse lg:flex-row xl:flex-row 2xl:flex-row">
+    <div className="snap-center z-10 w-full bg-slate-900 pt-12">
+      <div className=" min-h-[800px] mx-auto w-[90%] flex flex-col-reverse lg:flex-row xl:flex-row 2xl:flex-row">
         <div className="flex justify-center items-center lg:w-1/2 w-full h-[700px]">
           <DecoratingComponent />
         </div>
         <Waypoint onEnter={() => setTrigger(true)}>
-          <div className="flex justify-center items-center flex-col lg:w-1/2 w-full lg:px-5 xl:px-5 2xl:px-5 p-10 text-slate-200">
+          <div className="flex justify-center items-center flex-col lg:w-1/2 w-full text-slate-200">
             <animated.div style={spring} className="">
               <TiteDescription
                 title="Do more with Polydioms!"

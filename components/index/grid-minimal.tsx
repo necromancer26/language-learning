@@ -29,9 +29,9 @@ export default function GridMinimal() {
 
   return (
     <Waypoint onEnter={() => setTriggerPicture(true)}>
-      <div className="w-full h-[500px] lg:w-1/2 lg:h-full flex justify-center items-center ">
+      <div className="w-full h-[500px] lg:w-1/2 lg:h-full flex items-center justify-center lg:justify-end lg:items-center">
         <animated.div
-          className=" grid grid-cols-2  items-stretch gap-4 h-[80%] w-[80%] ease-in "
+          className=" grid grid-cols-2  items-stretch gap-4 h-[80%] lg:w-[80%] w-[100%] ease-in "
           style={pic}
         >
           <div className="bg-slate-200 row-span-2  scale-90 ease-in-out transition-all">
