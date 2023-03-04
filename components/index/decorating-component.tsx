@@ -7,12 +7,12 @@ export default function DecoratingComponent() {
   const pic = useSpring({
     from: { opacity: 0, x: -30 },
     to: triggerPicture && { opacity: 1, x: 0 },
-    config: {
-      duration: 1000,
-      mass: 5,
-      friction: 120,
-      tension: 120,
-    },
+    // config: {
+    //   duration: 1000,
+    //   mass: 5,
+    //   friction: 120,
+    //   tension: 120,
+    // },
   });
   return (
     <Waypoint onEnter={() => setTriggerPicture(true)}>

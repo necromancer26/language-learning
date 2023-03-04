@@ -9,10 +9,10 @@ export default function GridMinimal() {
     to: triggerPicture && { opacity: 1, x: 0 },
     // delay: 1000,
     config: {
-      duration: 1000,
-      mass: 5,
-      friction: 120,
-      tension: 120,
+      // duration: 1000,
+      // mass: 5,
+      // friction: 120,
+      // tension: 120,
     },
   });
   //   const pic = useSpring({

@@ -15,9 +15,9 @@ export default function FillerSection() {
     // delay: 1000,
     config: {
       duration: 1000,
-      mass: 5,
-      friction: 120,
-      tension: 120,
+      // mass: 5,
+      // friction: 120,
+      // tension: 120,
     },
   });
   return (

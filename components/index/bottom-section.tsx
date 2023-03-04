@@ -8,9 +8,9 @@ const FillerSectionAI = () => {
     to: trigger && { opacity: 1, x: 0 },
     config: {
       duration: 1000,
-      mass: 5,
-      friction: 120,
-      tension: 120,
+      // mass: 5,
+      // friction: 120,
+      // tension: 120,
     },
   });
   return (
