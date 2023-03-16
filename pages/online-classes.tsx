@@ -8,7 +8,6 @@ interface Props {
   onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 const OnlineClasses: React.FC<Props> = ({ courses }) => {
-  console.log(courses)
   const [coursesToList, setCoursesToList] = useState("isOnline");
   return (
     <div className="bg-slate-100">
@@ -38,7 +37,6 @@ export async function getServerSideProps() {
   try {
     const res = await fetch(`https://polydioms.online/api/courses`);
     const courses: any = await res.json();
-    console.log(courses)
     return { props: { courses } };
   } catch (err) {
     console.error(err);
