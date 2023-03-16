@@ -7,7 +7,6 @@ import { Waypoint } from "react-waypoint";
 export default function BasicCard({ course, idx }: any) {
   const [showText, setShowText] = useState(true);
   const [animationTrigger, setAnimationTrigger] = useState(false);
-
   const spring = useSpring({
     from: { opacity: 0, y: 100 },
     to: animationTrigger && { opacity: 1, y: 0 },
@@ -58,6 +57,7 @@ export default function BasicCard({ course, idx }: any) {
               </button>
             </Link>
           </div>
+          <h1>{course.isOnline}</h1>
         </div>
       </animated.div>
     </Waypoint>

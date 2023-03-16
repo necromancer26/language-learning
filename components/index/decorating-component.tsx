@@ -3,23 +3,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 export default function DecoratingComponent() {
-  const [triggerPicture, setTriggerPicture] = useState(false);
-  const pic = useSpring({
-    from: { opacity: 0, x: -30 },
-    to: triggerPicture && { opacity: 1, x: 0 },
-    // config: {
-    //   duration: 1000,
-    //   mass: 5,
-    //   friction: 120,
-    //   tension: 120,
-    // },
-  });
   return (
-    <Waypoint onEnter={() => setTriggerPicture(true)}>
-      <div>
-        <animated.div
+      <>
+        <div
           className="relative display h-[300px] w-[300px] md:h-[500px] md:w-[500px]"
-          style={pic}
         >
           <div
             className={`absolute font-[Inter] w-[130px] h-[130px] md:h-[200px] md:w-[200px] rounded-md z-20 bg-slate-200 bg-center bg-cover top-[65%] left-[65%] transition-all flex flex-col justify-center items-center`}
@@ -49,8 +36,7 @@ export default function DecoratingComponent() {
           <div
             className={`absolute w-[130px] h-[130px] rounded-md  md:h-[200px] md:w-[200px] bottom-[65%] right-[65%] bg-slate-400 bg-center bg-cover z-0 transition-all`}
           />
-        </animated.div>
-      </div>
-    </Waypoint>
+        </div>
+      </>
   );
 }
