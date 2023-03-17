@@ -26,7 +26,7 @@ export default function BasicCard({ course, idx }: any) {
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={idx}>
       <animated.div
         className={
-          "card card-compact w-80 sm:w-80 xmd:w-80 lg:w-96 bg-base-100 shadow-xl rounded-none lg:my-0 my-5 ease-linear "
+          "card card-compact w-80 sm:w-80 xmd:w-80 lg:w-96 bg-base-100 shadow-sm rounded-md lg:my-0 my-5 ease-linear hover:shadow-2xl cursor-pointer transition-shadow"
         }
         style={spring}
       >
@@ -35,7 +35,7 @@ export default function BasicCard({ course, idx }: any) {
             <img
               src={course?.image}
               alt="Courses"
-              className=" bg-cover bg-center"
+              className=" bg-cover bg-center hover:scale-105 transition-transform duration-[1s] ease-in-out cursor-pointer"
               width={800}
               height={500}
             />
@@ -52,7 +52,7 @@ export default function BasicCard({ course, idx }: any) {
           <div className="card-actions justify-end">
             <Link href="schedule">
               {" "}
-              <button className="btn btn-primary rounded-none">
+              <button className="btn  bg-slate-900 rounded-sm border-none hover:bg-slate-700">
                 Start learning
               </button>
             </Link>
