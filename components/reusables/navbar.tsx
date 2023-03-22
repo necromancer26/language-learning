@@ -81,7 +81,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="online-classes"
+              href="/online-classes"
               className={
                 "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               }
@@ -104,7 +104,7 @@ export default function Navbar() {
                 "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               }
               onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
-              href="faqs"
+              href="/faqs"
             >
               FAQs
             </Link>
