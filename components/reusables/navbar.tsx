@@ -91,7 +91,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="about-us"
+              href="/about-us"
               className={
                 "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               }
@@ -113,7 +113,7 @@ export default function Navbar() {
                 "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  hover:text-white mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
               }
               onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
-              href="contact"
+              href="/contact"
             >
               Contact
             </Link>

@@ -50,7 +50,7 @@ export default function BasicCard({ course, idx }: any) {
             {course?.description}
           </p>
           <div className="card-actions justify-end">
-            <Link href="schedule">
+            <Link href={`/schedule/${course?.language.toLowerCase()}`}>
               {" "}
               <button className="btn  bg-slate-900 rounded-sm border-none hover:bg-slate-700">
                 Start learning

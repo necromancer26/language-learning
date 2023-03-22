@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "../components/reusables/footer";
 import TiteDescription from "../components/reusables/title-description";
 
@@ -110,21 +111,86 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 bg-slate-800 flex flex-col items-center justify-center text-slate-200 px-10 h-full">
-          <h2 className=" text-5xl  my-10">We are a translation service</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta omnis
-            et, aliquid quod porro alias facere doloribus unde quasi vitae dolor
-            sapiente cumque dolorem, dignissimos voluptatibus at soluta eaque
-            hic? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            <br />
-            Reiciendis harum distinctio quidem sint laboriosam, obcaecati
-            officiis fugiat quis aperiam sapiente voluptates eaque quae quisquam
-            eum non pariatur? Modi, eius dicta! Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Earum iste nesciunt ea sapiente
-            harum, id ducimus repellat, veniam, maxime sed voluptates iusto sit
-            illo minus quaerat consectetur magni. Expedita, soluta.
-          </p>
+        <div className="lg:w-1/2 bg-slate-800 flex flex-col items-start justify-center text-slate-200  h-full">
+          <div className="flex flex-col px-10">
+            <h2 className="text-5xl my-10 ">Language Courses</h2>
+            <p className="text-xl">
+              The Polydioms method favors oral expression that is built and
+              structured through active and focused dialogues. It is based on
+              techniques that allow quick and efficient memorization through the
+              spontaneous and immediate use of the language.
+              <br />
+              A direct, global, progressive and communicative methodology
+              <br />
+              Polydioms’ pedagogical approach is based on the principles of the
+              direct method and aims to promote the pleasure of learning through
+              constant encouragement, motivation and confidence. The learning
+              process is achieved thanks to the discovery of a new language
+              through its own culture. These are specific contents about a
+              various contexts, where the autonomy of the students is developed
+              via systematic practice and role-playing games.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="lg:h-[100vh] flex">
+        <div className="text-slate-50 w-[50%] flex justify-center items-center bg-slate-800 font-[Inter]">
+          <div className="px-10">
+            <h1 className="text-3xl">Translation and interpretation</h1>
+            <p className=" text-xl ">
+              {" "}
+              Polydioms guarantees high-quality translation and interpretation
+              services. All translations are verified and reviewed by a
+              professional translation team of sworn translators and linguists.
+              Translation and proofreading are available in multiple languages.
+            </p>
+          </div>
+        </div>
+        <div className=" w-[50%] flex justify-center items-center bg-slate-100 bg-no-repeat bg-center bg-cover">
+          <picture className=" h-full flex justify-center items-center">
+            <img
+              alt="translation"
+              className="w-[80%]"
+              src={
+                "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2F2-people-on-a-table.avif"
+              }
+            />
+          </picture>
+        </div>
+      </div>
+      <div className="lg:h-[100vh] flex flex-row-reverse">
+        <div className="text-slate-50 w-[50%] flex justify-center items-center bg-slate-800 font-[Inter]">
+          <div className="px-10 flex justify-evenly flex-col items-start h-full">
+            <h1 className="text-5xl font-[Inter] font-extrabold">
+              Consulting in Intercultural Communication and Management
+            </h1>
+            <p className="text-xl ">
+              <p className="">
+                {" "}
+                In a diversity of cultures and languages, it is important to
+                know how to navigate in order to adapt to different
+                environments. Our consultants are professionals in international
+                and intercultural communication and management.
+              </p>
+              <p>
+                They have several years of experience in their field and offer a
+                great expertise. They will walk you through your goal sets,
+                raising awareness of cultural differences and how to
+                successfully address them.
+              </p>
+            </p>
+          </div>
+        </div>
+        <div className="w-[50%] flex justify-center items-center bg-slate-100 bg-no-repeat bg-center bg-cover">
+          <picture className="h-full flex justify-center items-center">
+            <img
+              alt="translation"
+              className="h-[80%]"
+              src={
+                "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fconsulting.avif"
+              }
+            />
+          </picture>
         </div>
       </div>
     </>
