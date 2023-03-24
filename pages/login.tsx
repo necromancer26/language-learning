@@ -38,7 +38,7 @@ export default function LoginRegister() {
             />
           </Link>
         </div>
-        <div className=" py-6">
+        <div className="pb-6 pt-0">
           <Link href={"/"} className="cursor-pointer">
             <Image
               src={

@@ -49,7 +49,7 @@ export default function LoginRegister() {
             />
           </Link>
         </div>
-        <div className="py-6">
+        <div className="pb-6 pt-0">
           <Link href={"/"} className="cursor-pointer">
             <Image
               src={
@@ -75,7 +75,7 @@ export default function LoginRegister() {
           </p>
         </div>
         <div className="w-full max-w-xl my-6 ">
-          <form className="px-8 pt-6 pb-8 mb-4">
+          <form className="px-8 pb-8 mb-4">
             <div className="flex flex-wrap -mx-3 mb-3">
               <div className="w-full px-3">
                 <label
