@@ -18,7 +18,10 @@ export default function CountrySelector({
   disabled = false,
   onToggle,
   onChange,
-  selectedValue,
+  selectedValue = {
+    title: "Afghanistan",
+    value: "AF",
+  },
 }: CountrySelectorProps) {
   const ref = useRef<HTMLDivElement>(null);
 

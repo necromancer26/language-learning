@@ -7,7 +7,7 @@ import CountrySelector from "../components/reusables/selector";
 import { SelectMenuOption } from "../types/types";
 
 export default function LoginRegister() {
-  const [country, setCountry] = useState<SelectMenuOption["value"]>("BE");
+  const [country, setCountry] = useState<SelectMenuOption["value"]>("US");
   const [isOpen, setIsOpen] = useState(false);
   const {
     register,
@@ -127,9 +127,10 @@ export default function LoginRegister() {
                   open={isOpen}
                   onToggle={() => setIsOpen(!isOpen)}
                   onChange={setCountry}
-                  selectedValue={COUNTRIES.find(
-                    (option) => option.value === country
-                  )}
+                  selectedValue={
+                    COUNTRIES.find((option) => option?.value === country) ||
+                    COUNTRIES[0]
+                  }
                 />
               </div>
 
