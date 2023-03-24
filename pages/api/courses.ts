@@ -120,7 +120,7 @@ export default function handler(
         description:
           "Portuguese is a romantic and poetic language spoken by over 250 million people worldwide and is the official language of Portugal, Brazil, Mozambique, Angola, and other countries.",
         image:
-          "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fcities%2Flisboa.avif",
+          "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Frio-de-janeiro.avif",
 
         isOnline: true,
         isInPerson: true,

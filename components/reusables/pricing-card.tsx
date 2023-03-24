@@ -27,7 +27,7 @@ export default function PricingCard({
         <animated.div
           key={course.title}
           className={`bg-slate-100 py-8 px-4 shadow-lg transition-all min-h-[300px] ${
-            selectedIndex === index ? "border-l-4 border-slate-500" : ""
+            selectedIndex === index ? "border-l-4 border-teal-500" : ""
           } hover:shadow-xl transform hover:-translate-y-1 cursor-pointer ease-linear`}
           onClick={() => setSelectedIndex(index)}
           style={spring}

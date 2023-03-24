@@ -66,9 +66,19 @@
   display: block;
   width: 0;
   height: 1px;
-  background: #f2f2f2;
+  background: #f1f5f9;
   transition: width 0.3s;
   margin-top: 5px;
+}
+.clipped-text{
+  /* color: black; */
+  -webkit-text-fill-color:transparent; 
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:  rgba(241, 245, 249, 0.5)
+  ;
+  font-family: "Inter",sans-serif;
+  font-style: bold;
+
 }
 
 .cool-link:hover::after {

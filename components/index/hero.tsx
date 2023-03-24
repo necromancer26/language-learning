@@ -37,6 +37,8 @@ export default function Hero() {
           className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col px-8 md:p-20 lg:bg-slate-900  ease-in-out bg-transparent"
           style={curtain}
         >
+        {/* <h1 className="clipped-text text-[200px] font-bold absolute text-slate-900 bottom-[25%] left-[20%]">Polydioms</h1> */}
+
           <animated.h1
             style={spring}
             className=" bg-transparent mb-5 text-4xl md:text-5xl lg:w-full font-bold text-white font-['Inter'] font-cursive relative font-DancingScript font-cursive hero-title"
@@ -44,7 +46,7 @@ export default function Hero() {
             <span>Language Barrier</span> <br />
             <span className="font-[Inter]">
               Shall Not <br /> Hinder <br />{" "}
-              <span className="animated-text font-[Inter] font-bold">
+              <span className="animated-text font-[Satisfy]">
                 Your Success
               </span>
             </span>
