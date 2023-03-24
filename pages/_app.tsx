@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Polydioms</title>
         <meta name="description" content="Polydioms, language services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fslate.svg" />
       </Head>
       <Navbar />
       <Component {...pageProps} />
