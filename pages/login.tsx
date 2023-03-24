@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import SideFiller from "../components/reusables/side-filler";
+import LoginForm from "../components/user-auth/login-form";
 export default function LoginRegister() {
   const {
     register,
@@ -12,23 +14,9 @@ export default function LoginRegister() {
 
   return (
     <div className="h-[100vh] bg-slate-50 flex w-full md:flex-row-reverse font-[Inter]">
-      <div className="h-[100vh] hidden w-1/3 bg-slate-900 fixed left-0 md:flex md:flex-col justify-center items-center gap-20 px-4">
-        <Link href={"/"}>
-          <Image
-            src={
-              "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
-            }
-            width={300}
-            height={300}
-            alt="logo"
-          />
-        </Link>
-        <h1 className="text-white font-[Satisfy] text-[32px] text-center">
-          {"Discover a new way to learn languages!"}
-        </h1>
-      </div>
+      <SideFiller />
       <div className="flex flex-col items-center justify-start md:w-2/3 w-full">
-      <div className=" flex-row-reverse pt-10  pr-20 right-0 w-full hidden md:flex">
+        <div className=" flex-row-reverse pt-10  pr-20 right-0 w-full hidden md:flex">
           <Link href={"/"}>
             <Image
               alt="home"
@@ -63,58 +51,7 @@ export default function LoginRegister() {
             </Link>
           </p>
         </div>
-        <div className="w-full max-w-xl">
-          <form className=" rounded px-8 pt-6 pb-8 mb-4">
-            <div className="mb-4">
-              <label
-                className="block text-gray-700 text-sm mb-2"
-                htmlFor="email"
-              >
-                Your email address
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="username"
-                type="text"
-                placeholder=""
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                className="block text-gray-700 text-sm mb-2"
-                htmlFor="password"
-              >
-                Your password
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                id="password"
-                type="password"
-                placeholder=""
-              />
-              <p className="text-red-500 text-xs italic hidden">
-                Please choose a password.
-              </p>
-            </div>
-            <div className="flex flex-col items-center justify-between gap-5">
-              <button
-                className="bg-slate-900 hover:bg-teal-500 text-white py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-                type="button"
-              >
-                Sign In
-              </button>
-              <a
-                className="inline-block align-baseline  text-sm text-slate-500 hover:text-teal-500"
-                href="#"
-              >
-                Forgot Password?
-              </a>
-            </div>
-          </form>
-          <p className="text-center text-gray-500 text-xs">
-            &copy; Polydioms SA. 2023.
-          </p>
-        </div>
+        <LoginForm />
       </div>
     </div>
   );

@@ -34,17 +34,19 @@ export default function Hero() {
         className={`hero min-h-[100vh] bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
       >
         <animated.div
-          className="lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col p-20 lg:bg-slate-900  ease-in-out bg-transparent"
+          className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col px-8 md:p-20 lg:bg-slate-900  ease-in-out bg-transparent"
           style={curtain}
         >
           <animated.h1
             style={spring}
-            className=" bg-transparent mb-5 text-4xl md:text-6xl lg:w-full font-bold text-white font-['PlayfairDisplay'] font-cursive relative font-DancingScript  font-cursive hero-title"
+            className=" bg-transparent mb-5 text-4xl md:text-5xl lg:w-full font-bold text-white font-['Inter'] font-cursive relative font-DancingScript font-cursive hero-title"
           >
             <span>Language Barrier</span> <br />
-            <span className="font-[Dancing Script]">
-              Shall not <br /> Hinder <br />{" "}
-              <span className="animated-text">Your Success</span>
+            <span className="font-[Inter]">
+              Shall Not <br /> Hinder <br />{" "}
+              <span className="animated-text font-[Inter] font-bold">
+                Your Success
+              </span>
             </span>
           </animated.h1>
           <animated.span
@@ -55,7 +57,7 @@ export default function Hero() {
             and achieve your goals today.
           </animated.span>
           <animated.a
-            className="btn ease-linear bg-teal-500 hover:bg-slate-600 glass"
+            className="ease-linear animated-button cursor-pointer"
             style={delayed}
           >
             Explore our services

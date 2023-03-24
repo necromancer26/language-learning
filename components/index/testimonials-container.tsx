@@ -29,7 +29,7 @@ export default function TestimonialsContainer() {
   };
   return (
     <section className="bg-white dark:bg-slate-900">
-      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+      <div className="py-8 px-8 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <Waypoint onEnter={() => setTriggerTitle(true)}>
           <div>
             <animated.div

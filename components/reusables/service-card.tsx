@@ -20,7 +20,7 @@ export default function ServiceCard({ service, index = 0 }: any) {
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={index}>
       <div>
         <animated.div className="w-full mb-4" style={spring}>
-          <div className="bg-slate-50 p-6 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+          <div className="bg-slate-50 py-6 px-4 rounded-sm shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
             <div className="flex my-5 ">
               <Image
                 // fill

@@ -22,20 +22,19 @@ export default function Header({
   }, []);
 
   return (
-    <section className="pt-0 h-full lg:h-[50vh] font-[PlayFairDisplay] bg-slate-900 md:bg-slate-900 lg:bg-slate-900 lg:text-slate-200 w-full flex">
+    <section className="min-h-[35vh] max-h-[40vh] font-[Inter] bg-slate-900 md:bg-slate-900 lg:bg-slate-900 lg:text-slate-200 w-full flex">
       <div className=" text-slate-200 md:text-slate-200 lg:text-slate-200 flex flex-col-reverse lg:flex-row justify-center items-center w-full my-20 lg:my-0">
-        <div className="w-full lg:w-1/2 flex justify-center flex-col items-center h-full">
-          <div className="w-[90%] md:w-[90%] lg:w-[80%] flex justify-center items-start flex-col">
-            <h1 className="mb-5 text-4xl md:text-4xl  lg:text-5xl font-bold text-start ">
+        <div className="w-full md:w-[100%] flex justify-center flex-col items-center h-full mt-24">
+          <div className="w-[90%] md:w-[80%] flex justify-center items-start flex-col">
+            <h1 className="mb-5 text-4xl  text-start font-bold">
               {title}
             </h1>
-            <p className=" mb-5 text-md md:text-lg  lg:text-2xl text-start w-full">
-              {/* Online English classes to practice speaking together */}
+            <p className=" mb-5 text-md md:text-lg text-start w-full">
               {description}
             </p>
           </div>
         </div>
-        <div
+        {/* <div
           className="lg:w-1/2 bg-cover bg-center w-full h-full hidden md:inline-block"
           style={{
             backgroundImage:
@@ -45,13 +44,7 @@ export default function Header({
           <div
             className={`h-full w-full backdrop-blur-[5px] from-[#2b2d42]`}
           ></div>
-        </div>
-        {/* <p className="w-full">
-          {`We offer a wide range of online and in-person language courses designed to help learners
-           of all levels achieve their language goals. \n Our courses are designed and taught by
-            experienced language instructors who are passionate about
-             helping students succeed.`}
-        </p> */}
+        </div> */}
       </div>
     </section>
   );

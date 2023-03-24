@@ -21,9 +21,9 @@ export default function Testimonial({
   });
   return (
     <Waypoint onEnter={() => setTrigger(true)}>
-      <div>
+      <div className="">
         <animated.figure
-          className={`flex flex-col justify-center items-center p-8 text-center border-none md:p-12 lg:border-r dark:bg-slate-800 dark:border-slate-700 bg-slate-${bg}   `}
+          className={`flex flex-col justify-center items-center p-8 text-center border-none lg:border-r dark:bg-slate-800 dark:border-slate-700 bg-slate-${bg}   `}
           style={opacityAnimation}
         >
           <blockquote className="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400 ">

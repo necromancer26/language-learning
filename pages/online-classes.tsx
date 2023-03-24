@@ -10,7 +10,7 @@ interface Props {
 const OnlineClasses: React.FC<Props> = ({ courses }) => {
   const [courseListToShow, setCourseListToShow] = useState("isOnline");
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 font-[Inter]">
       <Header
         title="Online classes to learn your preferred language"
         description="Learn the language you want with the guidance of our expert tutors"
@@ -39,7 +39,7 @@ const OnlineClasses: React.FC<Props> = ({ courses }) => {
           </button>
         </div>
       </div>
-      <section className="flex w-full justify-center items-center py-6 bg-slate-100">
+      <section className="flex w-full justify-center items-center py-6">
         <CoursesList courses={courses} courseListToShow={courseListToShow} />
       </section>
     </div>

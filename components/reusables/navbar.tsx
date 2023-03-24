@@ -131,12 +131,13 @@ export default function Navbar(): JSX.Element {
                   href="/login"
                   className="inline-block text-sm px-4 py-2 leading-none rounded text-slate-900 font-bold  mt-4 lg:mt-0"
                 >
+            
                   <Image
                     src={
                       `https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Ficons%2Flogin-slate-${!navbarIsScrolled ? "light" : "dark"}.svg`
                     }
-                    height={30}
-                    width={30}
+                    height={20}
+                    width={20}
                     alt="login"
                   />
                   {/* <FontAwesomeIcon

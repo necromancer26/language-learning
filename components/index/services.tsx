@@ -52,17 +52,17 @@ export default function Services() {
   ];
   return (
     <section className="bg-slate-100 py-12 flex justify-center items-center lg:h-[60vh]">
-      <div className="flex flex-col  mx-auto px-6 justify-center items-center">
+      <div className="flex flex-col  mx-auto px-8 md:px-20 justify-center items-center ">
         <Waypoint onEnter={() => setTrigger(true)}>
           <div className="border-solid w-full flex items-center justify-center flex-col">
             <animated.h2
-              className="text-3xl font-bold text-gray-800 mb-6 text-center "
+              className="text-3xl font-bold text-gray-800 mb-6 w-full md:text-center "
               style={opacityAnimation}
             >
               What we offer!
             </animated.h2>
             <animated.p
-              className="text-gray-600 mb-8"
+              className="text-gray-600 mb-8 md:text-center w-full"
               style={useSpring(delayedAnimation)}
             >
               Here are the services we deliver and more

@@ -59,9 +59,16 @@ const Pricing = () => {
   ];
 
   return (
-    <section className=" py-12 bg-slate-200">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Pricing</h2>
+    <section className="px-8 py-12  bg-slate-200">
+      <div className="container mx-auto px-0">
+        <div className="flex justify-center items-center flex-col mb-12 x">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
+            Choose your pack
+          </h2>
+          <p className=" text-[20px]">
+            Sign up and choose the pack that suits you best!
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-col-1 lg:grid-cols-5 gap-5">
           {courses.map((course, index) => (
             <PricingCard

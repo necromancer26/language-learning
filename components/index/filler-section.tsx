@@ -12,7 +12,7 @@ export default function FillerSection() {
   return (
     <div className="lg:py-0 snap-center lg:h-[100vh] bg-slate-100">
       <div className="flex flex-col md:flex-col lg:flex-row sm:flex-col h-full w-[90%]  mx-auto">
-          <div className="flex justify-center items-center flex-col lg:w-1/2 w-full text-slate-600">
+          <div className="flex justify-center md:items-center flex-col lg:w-1/2 w-full text-slate-600">
               <TiteDescription
                 title="Learn with your preferred language"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facere
