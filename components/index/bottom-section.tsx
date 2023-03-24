@@ -1,4 +1,5 @@
 import { animated, useSpring } from "@react-spring/web";
+import Link from "next/link";
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 const FillerSectionAI = () => {
@@ -22,9 +23,11 @@ const FillerSectionAI = () => {
         <p className="text-slate-500 mb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
         </p>
-        <button className="bg-slate-900 btn text-white px-6 py-3 hover:bg-slate-700">
-          Create an account
-        </button>
+        <Link href={"/sign-up"}>
+          <button className="bg-slate-900 btn text-white px-6 py-3 hover:bg-slate-700">
+            Create an account
+          </button>
+        </Link>
       </div>
       <div className="lg:w-2/3">
         <Waypoint onEnter={() => setTrigger(true)}>

@@ -25,20 +25,31 @@ export default function LoginRegister() {
 
   return (
     <div className=" bg-slate-50 flex w-full md:flex-row-reverse font-[Inter]">
-      <div className="h-[100vh] hidden w-1/3 bg-slate-900 fixed left-0 md:flex justify-center items-center">
-        <Link href={"/"} className="cursor-pointer">
-          <Image
-            src={
-              "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
-            }
-            width={300}
-            height={300}
-            alt="logo"
-          />
-        </Link>
+      <div className="h-[100vh] hidden w-1/3 bg-slate-900 fixed left-0 md:flex md:flex-col justify-center items-center gap-20 px-4">
+        <Image
+          src={
+            "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
+          }
+          width={300}
+          height={300}
+          alt="logo"
+        />
+        <h1 className="text-white font-[Satisfy] text-[32px] text-center">
+          {"Discover a new way to learn languages!"}
+        </h1>
       </div>
       <div className="flex flex-col items-center justify-start md:w-2/3 w-full h-auto lg:h-[120vh]">
-        <div className="py-12">
+        <div className=" flex flex-row-reverse pt-10  pr-20 right-0 w-full">
+          <Link href={"/"}>
+            <Image
+              alt="home"
+              width={20}
+              height={20}
+              src="https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Ficons%2Fhome.svg"
+            />
+          </Link>
+        </div>
+        <div className="py-6">
           <Link href={"/"} className="cursor-pointer">
             <Image
               src={
@@ -51,7 +62,7 @@ export default function LoginRegister() {
           </Link>
         </div>
         <div className="flex justify-center items-center flex-col">
-          <h1 className=" text-[39px] text-slate-700 font-bold">
+          <h1 className="text-[25px] lg:text-[39px] text-slate-700 font-bold text-center my-3">
             Welcome to Polydioms!
           </h1>
           <p className=" text-sm text-slate-700">
@@ -63,12 +74,12 @@ export default function LoginRegister() {
             </Link>
           </p>
         </div>
-        <div className="w-full max-w-xl my-6">
-          <form className="w-full max-w-lg">
+        <div className="w-full max-w-xl my-6 ">
+          <form className="px-8 pt-6 pb-8 mb-4">
             <div className="flex flex-wrap -mx-3 mb-3">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-password"
                 >
                   Email
@@ -84,7 +95,7 @@ export default function LoginRegister() {
             <div className="flex flex-wrap -mx-3 mb-3">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-first-name"
                 >
                   First Name
@@ -101,7 +112,7 @@ export default function LoginRegister() {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-last-name"
                 >
                   Last Name
@@ -117,7 +128,7 @@ export default function LoginRegister() {
             <div className="flex flex-wrap -mx-3 mb-2">
               <div className="w-full md:w-2/3 px-3 mb-3 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="country-selector"
                 >
                   Country
@@ -136,7 +147,7 @@ export default function LoginRegister() {
 
               <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-zip"
                 >
                   City
@@ -153,7 +164,7 @@ export default function LoginRegister() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-password"
                 >
                   Password
@@ -167,7 +178,7 @@ export default function LoginRegister() {
               </div>
               <div className="w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
                   htmlFor="grid-confirm-password"
                 >
                   Confirm password
@@ -182,7 +193,7 @@ export default function LoginRegister() {
             </div>
             <div className="flex flex-col items-center justify-between">
               <button
-                className="bg-slate-900 hover:bg-teal-500 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full transition-colors"
+                className="bg-slate-900 hover:bg-teal-500 text-white py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full transition-colors"
                 type="button"
               >
                 Register

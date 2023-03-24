@@ -12,29 +12,46 @@ export default function LoginRegister() {
 
   return (
     <div className="h-[100vh] bg-slate-50 flex w-full md:flex-row-reverse font-[Inter]">
-      <div className="h-[100vh] hidden w-1/3 bg-slate-900 fixed left-0 md:flex justify-center items-center">
-        <Image
-          src={
-            "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
-          }
-          width={300}
-          height={300}
-          alt="logo"
-        />
-      </div>
-      <div className="flex flex-col items-center justify-start md:w-2/3 w-full ">
-        <div className=" py-12">
+      <div className="h-[100vh] hidden w-1/3 bg-slate-900 fixed left-0 md:flex md:flex-col justify-center items-center gap-20 px-4">
+        <Link href={"/"}>
           <Image
             src={
-              "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-slate-writing.svg"
+              "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-white.svg"
             }
-            width={150}
-            height={150}
+            width={300}
+            height={300}
             alt="logo"
           />
+        </Link>
+        <h1 className="text-white font-[Satisfy] text-[32px] text-center">
+          {"Discover a new way to learn languages!"}
+        </h1>
+      </div>
+      <div className="flex flex-col items-center justify-start md:w-2/3 w-full">
+      <div className=" flex flex-row-reverse pt-10  pr-20 right-0 w-full">
+          <Link href={"/"}>
+            <Image
+              alt="home"
+              width={20}
+              height={20}
+              src="https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Ficons%2Fhome.svg"
+            />
+          </Link>
+        </div>
+        <div className=" py-6">
+          <Link href={"/"} className="cursor-pointer">
+            <Image
+              src={
+                "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-slate-writing.svg"
+              }
+              width={150}
+              height={150}
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className="flex justify-center items-center flex-col">
-          <h1 className=" text-[39px] text-slate-700 font-bold">
+          <h1 className="text-[25px] md:text-[39px] text-slate-700 font-bold text-center my-3">
             Glad to see you back!
           </h1>
           <p className=" text-sm text-slate-700">
@@ -50,13 +67,13 @@ export default function LoginRegister() {
           <form className=" rounded px-8 pt-6 pb-8 mb-4">
             <div className="mb-4">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm mb-2"
                 htmlFor="email"
               >
                 Your email address
               </label>
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="username"
                 type="text"
                 placeholder=""
@@ -64,13 +81,13 @@ export default function LoginRegister() {
             </div>
             <div className="mb-6">
               <label
-                className="block text-gray-700 text-sm font-bold mb-2"
+                className="block text-gray-700 text-sm mb-2"
                 htmlFor="password"
               >
-                Password
+                Your password
               </label>
               <input
-                className="shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 id="password"
                 type="password"
                 placeholder=""
@@ -81,13 +98,13 @@ export default function LoginRegister() {
             </div>
             <div className="flex flex-col items-center justify-between gap-5">
               <button
-                className="bg-slate-900 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                className="bg-slate-900 hover:bg-teal-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                 type="button"
               >
                 Sign In
               </button>
               <a
-                className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                className="inline-block align-baseline  text-sm text-slate-500 hover:text-teal-500"
                 href="#"
               >
                 Forgot Password?
@@ -95,7 +112,7 @@ export default function LoginRegister() {
             </div>
           </form>
           <p className="text-center text-gray-500 text-xs">
-            &copy;2020 Acme Corp. All rights reserved.
+            &copy; Polydioms SA. 2023.
           </p>
         </div>
       </div>

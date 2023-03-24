@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar(): JSX.Element {
   const router = useRouter();
@@ -124,14 +126,25 @@ export default function Navbar(): JSX.Element {
                 </Link>
               </div>
 
-              {/* <div>
-            <a
-              href="#"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded text-slate-900 font-bold border-slate-900  hover:border-transparent hover:text-slate-900 hover:bg-slate-900 mt-4 lg:mt-0"
-            >
-              Log In
-            </a>
-          </div> */}
+              <div>
+                <Link
+                  href="/login"
+                  className="inline-block text-sm px-4 py-2 leading-none rounded text-slate-900 font-bold  mt-4 lg:mt-0"
+                >
+                  <Image
+                    src={
+                      `https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Ficons%2Flogin-slate-${!navbarIsScrolled ? "light" : "dark"}.svg`
+                    }
+                    height={30}
+                    width={30}
+                    alt="login"
+                  />
+                  {/* <FontAwesomeIcon
+                    icon={faArrowRightToBracket}
+                    style={{ color: "#f1f5f9" }}
+                  /> */}
+                </Link>
+              </div>
             </div>
           </div>
           {/* <div className="h-[100vh]  absolute z-50 top-0 left-0 w-[500px]"></div> */}
