@@ -28,7 +28,7 @@ export default function LoginRegister() {
         </h1>
       </div>
       <div className="flex flex-col items-center justify-start md:w-2/3 w-full">
-      <div className=" flex flex-row-reverse pt-10  pr-20 right-0 w-full">
+      <div className=" flex-row-reverse pt-10  pr-20 right-0 w-full hidden md:flex">
           <Link href={"/"}>
             <Image
               alt="home"
@@ -38,7 +38,7 @@ export default function LoginRegister() {
             />
           </Link>
         </div>
-        <div className="pb-6 pt-0">
+        <div className="pb-6 pt-6 md:pt-0">
           <Link href={"/"} className="cursor-pointer">
             <Image
               src={
@@ -98,7 +98,7 @@ export default function LoginRegister() {
             </div>
             <div className="flex flex-col items-center justify-between gap-5">
               <button
-                className="bg-slate-900 hover:bg-teal-500 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                className="bg-slate-900 hover:bg-teal-500 text-white py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
                 type="button"
               >
                 Sign In

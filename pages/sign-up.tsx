@@ -39,7 +39,7 @@ export default function LoginRegister() {
         </h1>
       </div>
       <div className="flex flex-col items-center justify-start md:w-2/3 w-full h-auto lg:h-[120vh]">
-        <div className=" flex flex-row-reverse pt-10  pr-20 right-0 w-full">
+        <div className="flex-row-reverse pt-10  pr-20 right-0 w-full hidden md:flex">
           <Link href={"/"}>
             <Image
               alt="home"
@@ -49,7 +49,7 @@ export default function LoginRegister() {
             />
           </Link>
         </div>
-        <div className="pb-6 pt-0">
+        <div className="pb-6 pt-6 md:pt-0">
           <Link href={"/"} className="cursor-pointer">
             <Image
               src={
