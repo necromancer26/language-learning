@@ -22,7 +22,7 @@ export default function handler(
         description:
           "Did you know that Arabic is one of the fastest growing languages in the world? Learning Arabic not only opens doors to countless job opportunities in business, politics, and diplomacy, but also allows you to connect with millions of speakers worldwide. ",
         image:
-          "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fcities%2Fryadh.avif",
+          "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fdubai.avif",
         isOnline: true,
         isInPerson: false,
       },

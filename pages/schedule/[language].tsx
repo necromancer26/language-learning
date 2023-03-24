@@ -17,12 +17,12 @@ const ScheduleLanguage: React.FC<Props> = ({ courses }) => {
     <div className="h-[100vh] bg-slate-900 flex flex-col justify-start items-center font-[Inter] w-full">
       <div className="mt-28 w-full flex justify-center items-center flex-col">
         <div
-          className=" text-[#023047] font-bold Inter800 rounded-3xl lg:w-[80%] bg-center bg-cover h-[70vh] flex justify-center items-center"
+          className=" text-[#023047]  Inter800 rounded-3xl lg:w-[80%] bg-center bg-cover h-[70vh] flex justify-center items-center"
           style={{ backgroundImage: `url(${course.image})` }}
         >
           <div className="flex flex-col gap-9 justify-start items-center pt-10 w-full h-full">
             <div className=" flex flex-col justify-center items-center bg-slate-900/90 px-3 pb-6 w-full">
-              <h1 className="text-[5rem] text-slate-100">
+              <h1 className="text-[5rem] text-slate-100 font-bold">
                 Learn {course.language}
               </h1>
               <p className="text-3xl text-slate-100">
