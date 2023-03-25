@@ -9,7 +9,7 @@ export default function DecoratingComponent() {
           className="relative display h-[300px] w-[300px] md:h-[500px] md:w-[500px]"
         >
           <div
-            className={`absolute font-[Inter] w-[130px] h-[130px] md:h-[200px] md:w-[200px] rounded-md z-20 bg-slate-200 bg-center bg-cover top-[65%] left-[65%] transition-all flex flex-col justify-center items-center`}
+            className={`absolute font-[Inter] w-[130px] h-[130px] md:h-[200px] md:w-[200px] rounded-3xl z-20 bg-slate-200 bg-center bg-cover top-[65%] left-[65%] transition-all flex flex-col justify-center items-center`}
           >
             <Image
               alt="icon earth"
@@ -27,14 +27,14 @@ export default function DecoratingComponent() {
             </p>
           </div>
           <div
-            className="bg-cover bg-center absolute bg-black top-0 left-0 z-10 h-full w-full rounded-md"
+            className="bg-cover bg-center absolute bg-black top-0 left-0 z-10 h-full w-full rounded-3xl"
             style={{
               backgroundImage:
                 "url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fmobile.jpg')",
             }}
           ></div>
           <div
-            className={`absolute w-[130px] h-[130px] rounded-md  md:h-[200px] md:w-[200px] bottom-[65%] right-[65%] bg-slate-400 bg-center bg-cover z-0 transition-all`}
+            className={`absolute w-[130px] h-[130px] rounded-3xl  md:h-[200px] md:w-[200px] bottom-[65%] right-[65%] bg-slate-400 bg-center bg-cover z-0 transition-all`}
           />
         </div>
       </>

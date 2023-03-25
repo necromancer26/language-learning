@@ -24,7 +24,7 @@ const FillerSectionAI = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
         </p>
         <Link href={"/sign-up"}>
-          <button className="bg-slate-900 btn text-white px-6 py-3 hover:bg-slate-700">
+          <button className="bg-slate-900 btn text-white px-6 py-3 hover:bg-slate-700 rounded-xl">
             Create an account
           </button>
         </Link>

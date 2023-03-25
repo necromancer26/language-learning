@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Services />
       <FillerSection />
       <OtherServicesSection />
+      <Services />
       <AnimatedPricing />
       <TestimonialsContainer />
       <Faqs />

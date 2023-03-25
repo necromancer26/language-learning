@@ -32,12 +32,22 @@ export default function LoginForm() {
             Please choose a password.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-between gap-5">
+        <div className="flex flex-col items-center justify-between gap-3 transition-all">
           <button
             className="bg-slate-900 hover:bg-teal-500 text-white py-3 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             type="button"
           >
             Sign In
+          </button>
+          <button className="flex items-center justify-center gap-3 py-3 px-4 bg-slate-600 hover:bg-blue-600 text-white  my-3 w-full -mx-3 rounded transition-colors">
+            <picture>
+              <img
+                src="https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Ficons%2Fgoogle-icon.svg"
+                alt="google sigun"
+                className="h-6 w-6"
+              />
+            </picture>
+            Continue with Google
           </button>
           <a
             className="inline-block align-baseline  text-sm text-slate-500 hover:text-teal-500"
