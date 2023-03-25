@@ -27,8 +27,8 @@ export default function LoginRegister() {
               src={
                 "https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-slate-writing.svg"
               }
-              width={150}
-              height={150}
+              width={100}
+              height={0}
               alt="logo"
             />
           </Link>

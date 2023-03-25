@@ -45,8 +45,8 @@ export default function Navbar(): JSX.Element {
             <div className="flex items-center flex-shrink-0 text-white mr-6">
               <Link href="/" className=" transition-all ">
                 <Image
-                  src={`https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2FLogo%2Fpolydioms-${
-                    !navbarIsScrolled ? "white" : "black"
+                  src={`/assets/logo/polydioms-logo-${
+                    !navbarIsScrolled ? "light" : "dark"
                   }.svg`}
                   alt="Logo Polydioms"
                   width={100}

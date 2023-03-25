@@ -30,7 +30,7 @@ export default function Hero() {
   });
   // lg:bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]
   return (
-    <div className="bg-cover bg-center lg:bg-fixed snap-center  bg-[url('https://polydioms.fra1.cdn.digitaloceanspaces.com/assets%2Fhero.jpg')]">
+    <div className="bg-cover bg-center lg:bg-fixed snap-center  bg-[url('/assets/hero.jpg')]">
       <div
         className={`hero min-h-[100vh] bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
       >

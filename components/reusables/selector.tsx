@@ -54,7 +54,7 @@ export default function CountrySelector({
           type="button"
           className={`${
             disabled ? "bg-neutral-100" : "bg-white"
-          } relative w-full shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+          } relative w-full shadow appearance-none border rounded py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
           aria-haspopup="listbox"
           aria-expanded="true"
           aria-labelledby="listbox-label"
@@ -111,7 +111,7 @@ export default function CountrySelector({
                     type="search"
                     name="search"
                     autoComplete={"off"}
-                    className=" block w-full sm:text-sm border-gray-300 rounded-md py-3 focus:ring-0"
+                    className=" px-6 block w-full sm:text-sm border-gray-300 focus:outline-none rounded-md py-1 focus:ring-0"
                     placeholder={"Search a country"}
                     onChange={(e) => setQuery(e.target.value)}
                   />
