@@ -81,7 +81,7 @@ export default function Navbar(): JSX.Element {
             >
               <div className="block transition-all ease-linear lg:pl-0 text-sm h-full lg:flex-grow flex-col lg:flex-row  lg:justify-start justify-center items-center">
                 <Link
-                  className="cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-100 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
+                  className="cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-300 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
                   onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
                   href={"/"}
                 >
@@ -90,7 +90,7 @@ export default function Navbar(): JSX.Element {
                 <Link
                   href="/online-classes"
                   className={
-                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-100 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
+                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-300 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
                   }
                   onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
                 >
@@ -100,7 +100,7 @@ export default function Navbar(): JSX.Element {
                 <Link
                   href="/about-us"
                   className={
-                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-100 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
+                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-300 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
                   }
                   onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
                 >
@@ -108,7 +108,7 @@ export default function Navbar(): JSX.Element {
                 </Link>
                 <Link
                   className={
-                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-100 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
+                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-300 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
                   }
                   onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
                   href="/faqs"
@@ -117,7 +117,7 @@ export default function Navbar(): JSX.Element {
                 </Link>
                 <Link
                   className={
-                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-100 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
+                    "cool-link block pl-4 lg:pl-0 py-4 lg:py-2 lg:inline-block lg:mt-0  lg:hover:text-slate-300 mr-4 hover:bg-slate-400 w-full lg:w-auto lg:hover:bg-transparent"
                   }
                   onClick={() => setDropdownIsClicked(!dropdownIsClicked)}
                   href="/contact"
