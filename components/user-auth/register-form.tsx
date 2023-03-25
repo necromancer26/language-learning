@@ -8,7 +8,7 @@ export default function RegisterForm() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full max-w-xl ">
-      <form className="pb-8 mb-4 w-full pt-6">
+      <form className="pb-8 mb-4 w-full pt-6 px-8">
         <div className="flex flex-wrap -mx-3 mb-3">
           <div className="w-full px-3">
             <label
