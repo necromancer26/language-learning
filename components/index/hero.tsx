@@ -1,5 +1,6 @@
 import { useSpring, animated } from "@react-spring/web";
-import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
+
 export default function Hero() {
   const curtain = useSpring({
     from: { opacity: 0, x: -100 },
@@ -34,10 +35,10 @@ export default function Hero() {
         className={`hero min-h-[100vh] bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
       >
         <animated.div
-          className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col px-8 md:p-20 lg:bg-slate-900  ease-in-out bg-transparent"
+          className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center items-start flex-col px-8 md:p-20 lg:bg-slate-900  ease-in-out bg-transparent relative"
           style={curtain}
         >
-        {/* <h1 className="clipped-text text-[200px] font-bold absolute text-slate-900 bottom-[25%] left-[20%]">Polydioms</h1> */}
+          {/* <h1 className="clipped-text text-[200px] font-bold absolute text-slate-900 bottom-[25%] left-[20%]">Polydioms</h1> */}
 
           <animated.h1
             style={spring}
@@ -46,20 +47,18 @@ export default function Hero() {
             <span>Language Barrier</span> <br />
             <span className="font-[Inter]">
               Shall Not <br /> Hinder <br />{" "}
-              <span className="animated-text font-[Satisfy]">
-                Your Success
-              </span>
+              <span className="animated-text font-[Satisfy]">Your Success</span>
             </span>
           </animated.h1>
           <animated.span
-            className="text-gray-300 mb-5 font-[Inter]"
+            className="text-gray-300 mb-5 font-[Inter] z-10"
             style={spring}
           >
             Find inspiration and actionable tips to overcome language barriers
             and achieve your goals today.
           </animated.span>
           <animated.a
-            className="ease-linear animated-button cursor-pointer"
+            className="ease-linear animated-button cursor-pointer z-10"
             style={delayed}
           >
             Explore our services

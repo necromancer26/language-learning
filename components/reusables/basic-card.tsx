@@ -26,11 +26,9 @@ export default function BasicCard({ course, idx }: any) {
   return (
     <Waypoint onEnter={() => setAnimationTrigger(true)} key={idx}>
       <div>
-      <Link href={`/schedule/${course?.language.toLowerCase()}`}>
-
         <animated.div
           className={
-            "card card-compact w-80 sm:w-80 xmd:w-80 lg:w-96 bg-base-100 shadow-sm rounded-md lg:my-0 my-5 ease-linear hover:shadow-2xl cursor-pointer transition-shadow"
+            "card card-compact max-h-[400px] w-80 sm:w-80 xmd:w-80 lg:w-96 bg-base-100 shadow-sm rounded-md lg:my-0 my-5 ease-linear hover:shadow-2xl cursor-pointer transition-shadow"
           }
           onMouseEnter={() => setZoom(true)}
           onMouseLeave={() => setZoom(false)}
@@ -43,9 +41,7 @@ export default function BasicCard({ course, idx }: any) {
                 alt="Courses"
                 className={`bg-cover bg-center ${
                   zoom && "scale-105"
-                } transition-transform duration-[1s] ease-in-out cursor-pointer`}
-                width={800}
-                height={500}
+                } transition-transform duration-[1s] ease-in-out cursor-pointer max-h-[50%]`}
               />
             </picture>
           </figure>
@@ -58,15 +54,19 @@ export default function BasicCard({ course, idx }: any) {
               {course?.description}
             </p>
             <div className="card-actions justify-end">
-                {" "}
-                <button className={`btn bg-slate-900 rounded-2xl border-none hover:bg-slate-700 ${zoom && "bg-slate-700"}`}>
-                  Start learning
-                </button>
+              {" "}
+              <Link
+                href={`/schedule/${course?.language.toLowerCase()}`}
+                className={`btn bg-slate-900 rounded-2xl border-none hover:bg-slate-700 ${
+                  zoom && "bg-slate-700"
+                }`}
+              >
+                Start learning
+              </Link>
             </div>
             <h1>{course.isOnline}</h1>
           </div>
         </animated.div>
-        </Link>
       </div>
     </Waypoint>
   );
