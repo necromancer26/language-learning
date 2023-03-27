@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function LoginForm() {
@@ -49,12 +50,12 @@ export default function LoginForm() {
             </picture>
             Continue with Google
           </button>
-          <a
+          <Link
             className="inline-block align-baseline  text-sm text-slate-500 hover:text-teal-500"
-            href="#"
+            href="/forgot-password"
           >
             Forgot Password?
-          </a>
+          </Link>
         </div>
       </form>
       <p className="text-center text-gray-500 text-xs">

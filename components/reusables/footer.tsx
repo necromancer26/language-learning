@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer(): JSX.Element {
   const router = useRouter();
   const isInLoggingPage =
-    router.pathname === "/login" || router.pathname === "/sign-up";
+  router.pathname === "/login" || router.pathname === "/sign-up"|| router.pathname === "/forgot-password"|| router.pathname === "/reset-password";
 
   return (
     <>

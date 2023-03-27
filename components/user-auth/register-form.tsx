@@ -12,7 +12,7 @@ export default function RegisterForm() {
         <div className="flex flex-wrap -mx-3 mb-3">
           <div className="w-full px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-password"
             >
               Email
@@ -28,7 +28,7 @@ export default function RegisterForm() {
         <div className="flex flex-wrap -mx-3 mb-3">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-first-name"
             >
               First Name
@@ -45,7 +45,7 @@ export default function RegisterForm() {
           </div>
           <div className="w-full md:w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-last-name"
             >
               Last Name
@@ -61,7 +61,7 @@ export default function RegisterForm() {
         <div className="flex flex-wrap -mx-3 mb-2">
           <div className="w-full md:w-2/3 px-3 mb-3 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="country-selector"
             >
               Country
@@ -80,7 +80,7 @@ export default function RegisterForm() {
 
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-zip"
             >
               City
@@ -97,7 +97,7 @@ export default function RegisterForm() {
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-password"
             >
               Password
@@ -111,7 +111,7 @@ export default function RegisterForm() {
           </div>
           <div className="w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs  mb-2"
+              className="block  tracking-wide text-gray-700 text-xs  mb-2"
               htmlFor="grid-confirm-password"
             >
               Confirm password
@@ -139,10 +139,13 @@ export default function RegisterForm() {
                 className="h-6 w-6"
               />
             </picture>
-            Continue with Google
+            Register with Google
           </button>
         </div>
       </form>
+      <p className="text-center text-gray-500 text-xs">
+        &copy; Polydioms SA. 2023.
+      </p>
     </div>
   );
 }

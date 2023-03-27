@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function Navbar(): JSX.Element {
   const router = useRouter();
   const isInLoggingPage =
-    router.pathname === "/login" || router.pathname === "/sign-up";
+    router.pathname === "/login" || router.pathname === "/sign-up"|| router.pathname === "/forgot-password"|| router.pathname === "/reset-password";
   const [navbarIsScrolled, setNavbarIsScrolled] = useState(false);
   const [dropdownIsClicked, setDropdownIsClicked] = useState(false);
   const changeBackground = () => {

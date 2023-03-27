@@ -1,27 +1,31 @@
-# Specify a base image
-FROM node:18-slim as node
-RUN npm install -g yarn
-FROM ubuntu:focal-20230126 as base
+FROM node:19-slim as node
+# FROM ubuntu:20.04 as base
 
+# COPY --from=node /usr/local/include /usr/local/include/
+# COPY --from=node /usr/local/lib/ /usr/local/lib/
+# COPY --from=node /usr/local/bin/ /usr/local/bin/
+
+# RUN corepack disable && corepack enable
+# ENTRYPOINT [ "/usr/local/bin/node" ]
 # Set the working directory
 WORKDIR /app
 
-# Copy app files
-# COPY . .
-# Copy app files
-COPY --from=node /usr/local/bin/yarn /usr/local/bin/yarn
-COPY --from=node /usr/local/bin/yarnpkg /usr/local/bin/yarnpkg
+# Install app dependencies
+COPY package.json yarn.lock ./
+RUN npm install --omit=dev
+
+# Copy app source code
+COPY . .
 # Install dependencies
-RUN yarn Install --production
+# RUN apt-get update && \
+#     apt-get install -y nodejs && \
+#     npm install --production
 
-# Build Next.js app
-RUN yarn build
-
-# Set environment variables
-ENV NODE_ENV=production
+# Build the app
+RUN npm run build
 
 # Expose the port
 EXPOSE 3000
 
 # Start the app
-CMD ["yarn", "start"]
+CMD ["npm","run", "start"]
