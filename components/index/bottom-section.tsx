@@ -16,7 +16,7 @@ const FillerSectionAI = () => {
   });
   return (
     <section className="bg-slate-300 flex">
-      <div className="container text-start lg:w-1/3 my-12">
+      <div className="container text-start lg:w-1/3 my-12 flex flex-col justify-center items-center md:items-start">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           {"Never too late to start learning"}
         </h2>

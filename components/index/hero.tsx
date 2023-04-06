@@ -36,7 +36,7 @@ export default function Hero() {
         className={`hero min-h-[100vh] bg-gradient-to-r from-[#2b2d42] flex backdrop-blur-[5px]`}
       >
         <animated.div
-          className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center text-center md:items-start flex-col px-8 md:p-20 lg:bg-slate-900  ease-in-out bg-transparent relative"
+          className="w-fulls lg:w-[45%] lg:h-[100vh] flex justify-center text-center md:items-start flex-col px-8 md:p-20  ease-in-out bg-transparent relative"
           style={curtain}
         >
           {/* <h1 className="clipped-text text-[200px] font-bold absolute text-slate-900 bottom-[25%] left-[20%]">Polydioms</h1> */}
@@ -60,7 +60,7 @@ export default function Hero() {
             Find inspiration and actionable tips to overcome language barriers
             and achieve your goals today.
           </animated.span>
-          <Link href={"/about-us"} className=" flex justify-center items-center lg:justify-start w-full" >
+          <Link href={"/about-us"} className=" flex justify-center items-center md:justify-start w-full" >
             <animated.button
               className="ease-linear animated-button cursor-pointer z-10 rounded-xl"
               style={delayed}

@@ -47,7 +47,7 @@ export default function Navbar(): JSX.Element {
                     !navbarIsScrolled ? "light" : "dark"
                   }.svg`}
                   alt="Logo Polydioms"
-                  width={100}
+                  width={130}
                   height={100}
                   className="ml-10 transition-all"
                 />

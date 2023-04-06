@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
   return (
     <>
       {!isInLoggingPage && (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 text-base-content bg-slate-200">
           <div>
             <span className="footer-title">Services</span>
             <a className="link link-hover">Branding</a>
@@ -40,9 +40,9 @@ export default function Footer(): JSX.Element {
                 <input
                   type="text"
                   placeholder="username@site.com"
-                  className="input input-bordered w-full pr-16"
+                  className="input input-bordered w-full pr-16 rounded-lg"
                 />
-                <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">
+                <button className="btn btn-primary absolute top-0 right-0 rounded-lg bg-slate-900">
                   Subscribe
                 </button>
               </div>
